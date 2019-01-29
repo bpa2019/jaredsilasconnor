@@ -220,10 +220,11 @@
 	#navHome
 	{
 		margin-top: 2vw;
+		width: 80vw;
 	}
 	#dressCode_link
 	{
-		top: 1vw;
+		top: 3.5vw;
 	}
 }
 
@@ -247,10 +248,11 @@
 	#navHome
 	{
 		margin-top: 2vw;
+		width: 80vw;
 	}
 	#dressCode_link
 	{
-		top: 1vw;
+		top: 3.5vw;
 	}
 }
 
