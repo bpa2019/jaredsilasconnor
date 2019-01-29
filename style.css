@@ -201,11 +201,22 @@
 /* ----------------------------- Home page media queries --------------------- */
 
 /* query for all devices max-width at 1020px */
-@media all and (max-width: 420px) {
-  .removed
-  {
-    display: none;
-  }
+@media all and (max-width: 1020px) 
+{
+    .removed
+    {
+		display: none;
+    }
+    #bg_home
+    {
+		background-repeat: no-repeat; 
+        background-position: center;
+        background-attachment: fixed;       
+        webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }
 
 
