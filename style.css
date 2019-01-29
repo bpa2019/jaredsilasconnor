@@ -200,6 +200,17 @@
 
 /* ----------------------------- Home page media queries --------------------- */
 
+/* query for all devices max-width at 1020px */
+@media all and (max-width: 1020px) {
+  .removed
+  {
+    display: none;
+  }
+}
+
+
+
+
 
 /* ----------------------------- End of home page media queries --------------------- */
 
