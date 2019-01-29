@@ -219,7 +219,11 @@
 	}
 	#navHome
 	{
-	margin-top: 2vw;
+		margin-top: 2vw;
+	}
+	#dressCode_link
+	{
+		top: 1vw;
 	}
 }
 
