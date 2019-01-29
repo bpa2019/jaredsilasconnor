@@ -227,6 +227,33 @@
 	}
 }
 
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px)
+{
+    .removed
+    {
+		display: none;
+    }
+    body
+    {
+		background-repeat: no-repeat; 
+        background-position: center;
+        background-size: cover;
+    }
+	.navsetup0
+	{
+	    margin-top: 0vw;
+	}
+	#navHome
+	{
+		margin-top: 2vw;
+	}
+	#dressCode_link
+	{
+		top: 1vw;
+	}
+}
+
 
 
 
