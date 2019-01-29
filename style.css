@@ -621,6 +621,20 @@
     }
 }
 
+/* query for all devices max-width at 1020px */
+@media all and (max-width: 1020px) 
+{
+    .footer2
+	{
+		width: 94vw;
+	}
+	.headerImage
+	{
+		width: 94vw;
+	}
+}
+
+
 /* ----------------------------- End of attractions page media queries --------------------- */
 
 /* -------------------------------- End of attractions page CSS ---------------------------- */
