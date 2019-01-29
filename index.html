@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+	    <!-- 
+		
+		File Name: index.html
+		Authors: Silas Dias, Connor Rodrigues, Jared Brudner
+		Date Created: 11/29/2018
+		Last Modified: 12/13/2018
+		
+		-->
+	
+		<!-- Name of this page -->
+        <title>Home</title>
+		
+		<!-- Provision of meta data in this HTML document -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Link to external CSS stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		
+		<!-- Displays a BPA image for favicon -->
+		<link rel="icon" href="images/favicon.jpg" type="image/jpg" sizes="16x16">
+
+	</head>
+
+	
+	<body id="bg_home" onload="setup();">
+	
+		<div class="removed">
+	
+		<!-- Div containing first half of webpage content -->
+		<div id="topdiv">
+		
+			<!-- Creates oval container -->
+			<div id="oval">
+			
+				<!-- Implementation of BPA logo on page -->
+				<img src="images/bpaLogo.png" id="logo"></img>
+			
+			</div>
+			
+			<!-- Discover Washington text creation -->
+			<h1 id="discoverHead">Discover Washington D.C.</h1>
+		
+			<!-- Implementation of page scroll arrow on page -->
+			<img src="images/arrow.gif" id="arrow" onclick="scrollwindow(c);"></img>
+			
+		</div>
+		
+		</div>
+		
+		
+		<div id="homeMain">
+		
+			<!-- Div container for navigation menu -->
+			<div class="topnav">
+		
+				<!-- BPA logo and borders in an image -->
+				<img src="images/navigation.png" class="navsetup0" />
+
+				<!-- Container of nav links -->
+				<ul id="navHome">
+					
+					<!-- Each individual navigation link -->
+					<li class="navItems"><a href="index.html" class="navlinks">HOME</a></li>
+					<li class="navItems"><a href="attractions.html" class="navlinks">ATTRACTIONS</a></li>
+					<li class="navItems"><a href="dining.html" class="navlinks">DINING</a></li>
+					<li class="navItems"><a href="transit.html" class="navlinks">TRANSIT</a></li>
+
+				</ul>
+
+			</div>
+
+			<!-- Content div on second half of page -->
+			<div id="contentMiddle">
+
+				<!-- Header describing the content displayed -->
+				<h1 id="headerOne">What We Do and How We Do It</h1>
+			
+				<!-- Text describing the purpose of website -->
+				<p id="mainOne">Welcome to the informational home page! 
+				This website was created to inform attendees of the 2019-2020 
+				Business Professionals of America National Leadership Conference, 
+				which takes place in Washington D.C.
+				
+				<br /><br />
+				
+				Washington D.C. has much to offer when it comes to tourism. According to U.S. News Travel, 
+				one of the best times to visit the area is in the Spring, a fantastic time to catch a glimpse of the cherry blossoms. The national buildings, monuments and structures are
+				sprinkled throughout the city, and they all tell the great story of our country's history. 
+				You'll need a fully charged phone or camera, as there will be many memories to capture and 
+				sights you will want to remember. </p>
+			
+				<!-- NLC image displayed -->
+				<img src="images/nlcLogo.png" id="nlcImg"/>
+				
+				<!-- HTML link directs to BPA website for dress code -->
+				<a href="http://www.bpa.org/nlc/dresscode"
+				id="dressCode_link" target="_blank">Click here to view the 
+				Dress Code.</a>
+			
+			</div>
+
+			
+			<!-- Bottom of page footer container --> 
+			<div class="footer1">
+			
+				<!-- Bottom left side footer content --> 
+				<div class="leftFooter">
+					<p>Chapter: BPA(435) Website Design Team</p>
+					<p>Members: Connor Rodrigues, Jared Brudner, Silas Dias</p>
+				</div>
+				
+				<!-- Bottom right side footer content -->
+				<div class="rightFooter">
+					<p>School: Assabet Valley Regional Technical High School</p>
+					<p>Location: Marlborough, Massachusetts</p>
+				</div>
+				
+			    <!-- Centered year on footer -->
+			    <div class="middleFooter">
+				    <p>Year: 2019</p>
+			    </div>
+			
+			</div>
+		
+		</div>
+	
+	</body>
+	
+	<script>
+		
+		var end;
+		
+		var frames;
+		
+		var increment;
+		
+		var c = 0;                            // Creates counter variable
+		
+		function scrollwindow() {
+		
+			window.scrollBy(0, increment);    // Scrolls window down by increment
+			
+			c++;                              // c = c + 1 (counter)
+			
+			if (c != frames) {                // If the page isn't done scrolling
+			
+			    setTimeout(scrollwindow, 16); // Run this function again in 16 milliseconds (for 60 FPS)
+			
+			}
+			
+			else {
+			
+			    c = 0;                        // Resets counter
+			
+			}
+		
+		}
+		
+		function setup() {
+		
+		    end = window.innerHeight;         // Sets the click to scroll the height of window
+		
+		    frames = 50; 					  // Duration of scroll
+		
+		    increment = end / frames;         // Formula defining the scroll length and duration
+			
+			document.body.addEventListener('touchmove', function(e){ e.preventDefault(); }, { passive: false }) // Checks if screen is touched and disables scroll
+			
+			}
+			
+	</script>
+
+
+</html>

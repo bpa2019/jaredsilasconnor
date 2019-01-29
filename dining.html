@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+	    <!-- 
+		
+		Authors: Silas Dias, Connor Rodrigues, Jared Brudner
+		Date Created: 11/28/2018
+		Last Modified: 1/16/2019
+		
+		-->
+	
+		<!-- Name of this page -->
+        <title>Dining</title>
+		
+		<!-- Provision of meta data in this HTML document -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Link to external CSS stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<!-- Displays a BPA image for favicon -->
+		<link rel="icon" href="images/favicon.jpg" type="image/jpg" sizes="16x16">
+		
+	</head>
+
+	<body onload="onload()" id="diningBody">
+	
+	    <!-- Div container for navigation menu -->
+	    <div class="topnav">
+	
+			<!-- BPA logo and borders in an image -->
+	        <img src="images/navigation.png" class="navsetup2" draggable="false" />
+
+			<!-- Container of nav links -->
+	        <ul class="nav">
+				
+				<!-- Each individual navigation link -->
+		        <li class="navitems"><a href="index.html" class="navlinks">HOME</a></li>
+		        <li class="navitems"><a href="attractions.html" class="navlinks">ATTRACTIONS</a></li>
+		        <li class="navitems"><a href="dining.html" class="navlinks">DINING</a></li>
+		        <li class="navitems"><a href="transit.html" class="navlinks">TRANSIT</a></li>
+
+		    </ul>
+		
+	    </div>
+		
+		<!--Slide show heading-->
+		<div class="slideshow">
+	        
+			<img class="mySlides" src="images/food1.jpg">
+	        
+			<img class="mySlides" src="images/food2.jpg">
+	        
+			<img class="mySlides" src="images/food3.jpg">
+			
+			<img class="mySlides" src="images/food4.jpg">
+			
+			<img class="mySlides" src="images/food5.jpg">
+			
+			<img class="mySlides" src="images/food6.jpeg">
+			
+			<img class="mySlides" src="images/food7.jpg">
+			
+			<img class="mySlides" src="images/food8.jpg">
+			
+			<img class="mySlides" src="images/food9.jpg">
+			
+			<img class="mySlides" src="images/food10.jpg">
+		
+		</div>
+		
+		
+		<!-- Div creates box for headings of meal types -->
+		<div class="mealTypes">
+			
+			<!-- Breakfast heading text -->
+		    <button class="tablinks" onclick="openCity(event, 'Breakfast')" id="meal1">Breakfast</button>
+			
+			<!-- Lunch heading text -->
+			<button class="tablinks" onclick="openCity(event, 'Lunch')" class="meal" id="meal2">Lunch</button>
+			
+			<!-- Dinner heading text -->
+			<button class="tablinks" onclick="openCity(event, 'Dinner')" class="meal" id="meal3">Dinner</button>
+		
+		</div>
+		
+		<!--Breakfast Menu Items-->
+
+		<div id="Breakfast" class="tabcontent">
+		    <p class="subMeal">Breakfast</p>
+			
+			<!-- Atrso Doughnuts & Friend Chicken -->
+			
+			<div id="border_breakfast">
+			
+				<img src="images/astro.jpg" id="astroImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">Astro Doughnuts & Fried Chicken</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 809-5565</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="http://astrodoughnuts.com/" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+			
+			<!-- Commissary DC -->
+			
+			<div id="border_breakfast">
+			
+				<img src="images/commissary.jpg" id="astroImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">Commissary DC</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 299-0018</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="http://commissarydc.com/menu/" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+			
+			<!-- Ted's Bulletin -->
+			
+			<div id="border_breakfast">
+			
+				<img src="images/teds.jpg" id="astroImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">Ted's Bulletin</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 265-8337</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="http://www.tedsbulletin.com/menu/" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+			
+			<!-- Bagels Etc -->
+			
+			<div id="border_breakfast">
+			
+				<img src="images/bagels.jpg" id="astroImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">Bagels Etc</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 466-7171</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="http://www.bagelsetc.net/" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+			
+			<!-- West Wing Cafe -->
+			
+			<div id="border_breakfast">
+			
+				<img src="images/astro.jpg" id="astroImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">West Wing Cafe</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 347-5855</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="http://westwingnj.wixsite.com/njdc" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+		
+		</div>
+		
+		<!--Lunch Menu Items-->
+
+		<div id="Lunch" class="tabcontent">
+		    <p class="subMeal">Lunch</p>
+			
+			<!-- Keren Restaurant & Coffee Shop -->
+			
+			<div id="border_lunch">
+			
+				<img src="images/keren.jpg" id="kerenImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">Keren Restaurant & Coffee Shop</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 265-5764</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="https://www.yelp.com/biz/keren-restaurant-washington" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+			
+			<!-- Amsterdam Falafelshop -->
+			
+			<div id="border_lunch">
+			
+				<img src="images/falafel.jpg" id="kerenImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">Amsterdam Falafelshop</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 234-1969</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="https://www.falafelshop.com/" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+			
+			<!-- &Pizza -->
+			
+			<div id="border_lunch">
+			
+				<img src="images/pizza.jpg" id="kerenImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">&pizza</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 347-5056</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="https://andpizza.com/" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+			
+			<!-- Good Stuff Eatery -->
+			
+			<div id="border_lunch">
+			
+				<img src="images/goodstuff.jpg" id="kerenImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">Good Stuff Eatery</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 543-8222</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="https://www.goodstuffeatery.com" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+			
+            <!-- Beefsteak -->			
+			
+			<div id="border_lunch">
+			
+				<img src="images/beefsteak.jpeg" id="kerenImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">Beefsteak</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 296-1439</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="beefsteakveggies.com" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+		
+		</div>
+		
+		<!--Dinner Menu Items-->
+		
+		<div id="Dinner" class="tabcontent">
+		    <p class="subMeal">Dinner</p>
+			
+			<!-- Hanks Oysters Bar -->
+			
+			<div id="border_dinner">
+			
+				<img src="images/hanks.jpg" id="hanksImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">Hank's Oyster Bar</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 462-4265</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="https://hanksoysterbar.com/dupont-circle/reservations/" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+			
+			<!-- Julia's Empanadas -->
+			
+			<div id="border_dinner">
+			
+				<img src="images/empan.jpg" id="hanksImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">Julia's Empanadas</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 861-8828</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="http://www.juliasempanadas.com/" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+			
+			<!-- Sweetgreen -->
+			
+			<div id="border_dinner">
+			
+				<img src="images/sweet.jpg" id="hanksImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">Sweetgreen</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 547-9338</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="https://order.sweetgreen.com" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+			
+			<!-- Kinship Restaurant -->
+			
+			<div id="border_dinner">
+			
+				<img src="images/kinship.jpg" id="hanksImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">Kinship Restaurant</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 737-7700</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="http://kinshipdc.com/" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+			
+			<!-- Chez Billy Sud -->
+			
+			<div id="border_dinner">
+			
+				<img src="images/billy.jpg" id="hanksImg"></img>
+				<img src="images/place_icon.png" class="placeIcon1"></img>
+				<p class="name1">Chez Billy Sud</p>
+				<img src="images/phone_icon.png" class="phoneIcon1"></img>
+				<p class="num1">(202) 965-2606</p>
+				<img src="images/site_icon.png" class="siteIcon1"></img>
+				<a href="http://chezbillysud.com/" class="site1" target="_blank"><u>Visit the Website!</u></a>
+			
+			</div>
+		
+		</div>
+		
+				
+		
+	    <!-- Bottom of page footer container -->
+	    <div class="footer3">
+		
+		    <!-- Bottom left side footer content -->
+		    <div class="leftFooter">
+                <p>Chapter: BPA(435) Website Design Team</p>
+                <p>Members: Connor Rodrigues, Jared Brudner, Silas Dias</p>
+			</div>
+			
+			<!-- Bottom right side footer content -->
+			<div class="rightFooter">
+                <p>School: Assabet Valley Regional Technical High School</p>
+			    <p>Location: Marlborough, Massachusetts</p>
+			</div>
+			
+			<!-- Middle part of the footer content -->
+			<div class="middleFooter">
+		    	<p>Year: 2019</p>
+	        </div>
+			
+        </div>
+		
+		<!-- Imports JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		<script>
+		
+			// Automatic Image Slideshow
+			
+			var myIndex = 0;
+
+			function carousel() {
+			
+				var i;
+				
+				var x = document.getElementsByClassName("mySlides"); // Sets class of slides
+				
+			for (i = 0; i < x.length; i++) {
+			
+				x[i].style.display = "none"; // Disables the display of other images
+				
+			}
+			
+			myIndex++;
+			
+			if (myIndex > x.length) {myIndex = 1}
+			
+			x[myIndex-1].style.display = "block";  
+			
+			setTimeout(carousel, 1000); // Changes image every 1 seconds
+			
+			}
+			
+			// Togglable Tabs
+			
+			function openCity(event, cityName) {
+			
+			  var i, tabcontent, tablinks;
+			  
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  
+			  for (i = 0; i < tabcontent.length; i++) {
+			  
+				tabcontent[i].style.display = "none";
+				
+			  }
+			  
+			  tablinks = document.getElementsByClassName("tablinks"); // Creates the clickability aspect of the tabs   
+			  
+			  for (i = 0; i < tablinks.length; i++) {
+			  
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+				
+			  }
+			  
+			  document.getElementById(cityName).style.display = "block";
+			  
+			}
+			
+			function onload() {
+				
+				openCity(null, "Breakfast")  // Call of function
+			
+				carousel();  // Runs Slideshow
+			}
+		
+        </script>
+		
+		
+		
+		
+		
+	</body>
+
+
+</html>

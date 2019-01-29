@@ -1,0 +1,1472 @@
+/* 
+
+    File Name: style.css
+	
+    Authors: Jared Brudner, Connor Rodrigues, Silas Dias
+	
+    Date Created: 11/29/2018
+	
+    Last Modified: 1/28/2019
+	
+	Note: Stylesheet for BPA website
+
+*/
+
+/* -------------------------------- Beginning of home page CSS ---------------------------- */
+
+
+/* position's the BPA logo image */
+.navsetup0
+{
+	position: absolute;
+	left: .5vw;
+	width: 97vw;
+	margin-top: 4vw;
+}
+
+/* Navigation links container */
+#navHome
+{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 20vw;
+	margin-top: 7.5vw;
+	width: 80vw;
+	height: 10vw;
+}
+
+/* Styling for the specific nav links */
+#navContainer
+{
+	position: absolute;
+	margin: 0;
+	padding-left: 18vw;
+	top: 7.75vw;
+	width: 100vw;
+	height: 10vw;
+}
+
+/* style for each navigation item on the bar */
+.navItems
+{
+	display: inline;
+	text-decoration: none;
+	padding: 1.5em;
+	width: 100vw;
+	font-size: 2.5vw;
+    font-weight: bold;
+}
+
+/* prevents the styling on  nav items when clicked */
+.navItems .navLinks:link, .navLinks:visited
+{
+	color: rgb(227, 193, 151);
+	text-decoration: none;
+	-webkit-text-stroke: .075vw #003263;
+}
+
+/*Styling for the footer*/
+.footer1 
+{
+   position: relative;
+   left: 1.5vw;
+   width: 95.5vw;
+   height: 8vw;
+   top: 14.5vw;
+   background-color: #003263;
+   color: white;
+}
+
+/* Styles the background image */
+#bg_home
+{
+	
+	/* The image used */
+	background-image: url("images/city2.jpg"); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+	overflow-x: hidden;
+}
+
+/* Styles the opaque circular div */
+#oval
+{
+	position: relative;
+    height: 23vw;
+    width: 35vw;
+	top: 20vh;
+	left: 32vw;
+    border-radius: 50%;
+	background: rgba(0, 0, 0, 0.65);
+}
+
+/* Centers and sizes the BPA logo on the circle div */
+#logo
+{
+	top: 6.25vw;
+	left: 5vw;
+	width: 25vw;
+	height: 12vw;
+	position: relative;
+	
+}
+
+/* Defines font to be utilized */
+@font-face
+{
+	font-family: CopperplateGothicBold;
+	src: url('CopperplateGothicBold.ttf');
+}
+
+/* Defines and aligns the discover DC heading text */
+#discoverHead
+{
+	font-family: CopperplateGothicBold;
+	font-size: 4vw;
+	color: #003159;
+	margin-top: 25vh;
+	margin-left: 20vw;
+}
+
+/* Styles the down arrow which transitions page */
+#arrow
+{
+	position: relative;
+	left: 44.75vw;
+	top: 1vw;
+	width: 10vw;
+	height: 5vw;
+}
+
+/* Styles and positions tan div container */
+#contentMiddle
+{
+	width: 95.5vw;
+	height: 35vw;
+	position: relative;
+	background-color: #e3c197;
+	left: 1.5vw;
+	top: 14vw;
+}
+
+/* Styles and positions section header */
+#headerOne
+{
+	position: absolute;
+	font-size: 3.5vw;
+	margin-left: 4vw;
+}
+
+/* Styles and positions the more info content (text) */ 
+#mainOne
+{
+	position: relative;
+	font-size: 1.6vw;
+	top: 8vw;
+	left: 3.5vw;
+	width: 50vw;
+	color: #000000;
+}
+
+/* Styles and positions NLC image */
+#nlcImg
+{
+	position: absolute;
+	left: 45vw;
+	top: 5vw;
+	width: 60vw;
+	height: 26vw;
+}
+
+/* Style and limited positioning for dress code link */
+#dressCode_link
+{
+	position: relative;
+	color: #000000;
+	font-size: 1.75vw;
+	top: 8.75vw;
+	left: 3.5vw;
+	width: 30vw;
+	text-decoration: underline;
+}
+
+/* ----------------------------- Home page media queries --------------------- */
+
+
+/* ----------------------------- End of home page media queries --------------------- */
+
+/* -------------------------------- End of home page CSS ---------------------------- */
+
+
+/* ---------------------------- Beginning of attractions page CSS ---------------------------- */
+
+/* position's the BPA logo image */
+.navsetup1
+{
+	position: absolute;
+	left: .5vw;
+	width: 97vw;
+	height: auto;
+}
+
+
+/* unvisited and visited nav link */
+.site1:link, .site1:visited
+{
+    color: rgb(227, 193, 151);
+	text-decoration: none;
+	-webkit-text-stroke: .1vw #003263;
+}
+
+/*Generic styling for all parts of the footer*/
+.footer2
+{
+	position: relative;
+	background-color:#003263;
+	width: 95.65vw;
+	height: 8.5vw;
+	top: 9vw;
+	left: 1.45vw;
+	color:white;
+}
+
+/*Aligns the left side of the footer *Chapter, Members*/
+.leftFooter
+{
+	float: left;
+	padding-left: 21vw;
+	font-size: 1vw;
+	padding-top: .5vw;
+}
+
+/*Aligns the right side of the footer *School, Location*/
+.rightFooter
+{
+	float: right;
+	padding-right: 20vw;
+	font-size: 1vw;
+	padding-top: .5vw;
+}
+
+/*Aligns the middle of the footer *Year*/
+.middleFooter
+{
+	position: absolute;
+	top: 5vw;
+	left: 46vw;
+	color: white;
+	font-size: 1vw;
+}
+
+/*Header image for the attractions page */
+.headerImage
+{
+	position: relative;
+	background-size: cover;
+	top: 10vw;
+	width: 95.5vw;
+	height: 35vw;
+	left: 1.5vw;
+}
+
+/*Overtlaying Header text for attractions  "Experience History" */
+.headerText1
+{
+	position: absolute;
+	font-family: CopperplateGothicBold;
+	font-size: 4.5vw;
+	color: white;
+	top: 20vw;
+	left: 27vw;
+	text-align: center;
+	
+}
+
+/* Defines font to be utilized */
+@font-face
+{
+	font-family: CopperplateGothicBold;
+	src: url('CopperplateGothicBold.ttf');
+}
+
+/*The dark blue background the modal is contained in*/
+#modalBackground
+{
+	position: relative;
+	background-color:#003263; /*BPA Blue*/
+	width: 97.6%;
+	height:80vw;
+	top: 10.75vw;
+	left: 1.4vw;
+}
+/*The tan background above the footer*/
+#tanBackground
+{
+	position: relative;
+	background-color:#f8d09c; /*Tan*/
+	width: 97.6%;
+	height:5vw;
+	top:10vw;
+	left: 1.4vw;
+}
+
+/* The Modal (background) */
+.modal 
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content 
+{
+    margin: auto;
+    display: block;
+    width: 40vw;
+	height: 25vw;
+    max-width: 80vw;
+}
+
+/* Caption of Modal Image styling and positioning */
+#caption
+ {
+    margin: auto;
+    display: block;
+    width: 70vw;
+    max-width: 80vw;
+    text-align: center;
+    color: #ccc;
+    padding: 10px;
+    height: 10vw;
+	font-size: 1vw;
+}
+#modalCaption
+{
+	font-size:2vw;
+}
+/* Modal Animation name and timing */
+.modal-content, #caption 
+{    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+/*Zoom effect when a modal opens*/
+@-webkit-keyframes zoom 
+{
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+/*Zoom effect when a modal opens*/
+@keyframes zoom 
+{
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button styling and postioning*/
+.close 
+{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* The Close Button on hover effects*/
+.close:hover,
+.close:focus 
+{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*White box and Location Icon styling and positioning*/
+.locationIcon
+{
+	position: absolute;
+	width: 18vw;
+	height:15vw;
+	top: 1vw;
+	left: 1vw;
+	opacity:0;
+}
+
+/*displays white box and locaiton icon on hover*/
+.locationIcon:hover
+{
+	opacity:1;
+	cursor: pointer;
+}
+
+/*position of the image in the modal*/
+.generalModal
+{
+	position: relative;
+	width: 18vw;
+	height:15vw;
+	top: 1vw;
+	left: 1vw;
+}
+/*position of the label under the modal image*/
+.modalText
+{
+	position: relative;
+	color: white;
+	font-family: Castellar;
+	font-size:1vw;
+	text-align: center;
+	margin-top: 1.8vw;
+}
+
+/*Dark Blue div containing the arlington background*/
+#arlingtonModalBg
+{
+	position: relative;
+	width: 20vw;
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
+	top: 5vw;
+	left: 10vw;
+}
+
+/*Dark Blue div containing the capitol building background*/
+#capitolModalBg
+{	
+	position: relative;
+	width: 20vw;
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
+	bottom: 15vw;
+	left: 38vw;
+}
+
+/*Dark Blue div containing the lincoln memorial background*/
+#lincolnModalBg
+{	
+	position: relative;
+	width: 20vw;
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
+	bottom: 35vw;
+	left: 67vw;
+}
+
+/*Dark Blue div containing the air and space museum background*/
+#airModalBg
+{	
+	position: relative;
+	width: 20vw;
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
+	bottom: 30vw;
+	left: 10vw;
+}
+
+/*Dark Blue div containing the Thomas Jefferson Memorial background*/
+#thomasModalBg
+{	
+	position: relative;
+	width: 20vw;
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
+    bottom: 50vw;
+	left: 38vw;
+}
+
+/*Dark Blue div containing the vietnam memorial background*/
+#vietnamModalBg
+{	
+	position: relative;
+	width: 20vw;
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
+	bottom: 70vw;
+	left: 67vw;
+}
+
+/*Dark Blue div containing the washington monument background*/
+#washingtonModalBg
+{	
+	position: relative;
+	width: 20vw;
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
+	bottom: 65vw;
+	left: 10vw;
+}
+
+/*Dark Blue div containing the white house background*/
+#whiteModalBg
+{	
+	position: relative;
+	width: 20vw;
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
+	bottom: 85vw;
+	left: 38vw;
+}
+
+/*Dark Blue div containing the white house background*/
+#ww2ModalBg
+{	
+	position: relative;
+	width: 20vw;
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
+	bottom: 105vw;
+	left: 67vw;
+}
+
+
+/* ----------------------------- Beginning of attractions page media queries --------------------- */
+
+@media only screen and (max-width: 1280px) 
+{
+    .modal 
+	{
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 40px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+		
+    }
+}
+
+@media only screen and (max-width: 800px) 
+{
+    .modal 
+	{
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 60px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px)
+{
+    .modal-content 
+	{
+        width: 100%;
+    }
+}
+
+/* ----------------------------- End of attractions page media queries --------------------- */
+
+/* -------------------------------- End of attractions page CSS ---------------------------- */
+
+
+/* -------------------------------- Beginning of dining page CSS ---------------------------- */
+
+/* positionis the BPA logo image */
+.navsetup2
+{
+	position: absolute;
+	left: .5vw;
+	width: 97vw;
+}
+
+/* Navigation links container */
+.nav
+{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 20vw;
+	top: 4vw;
+}
+
+/* unvisited and visited nav link */
+.site1:link, .site1:visited
+{
+    color: rgb(227, 193, 151);
+	text-decoration: none;
+	-webkit-text-stroke: .1vw #003263;
+}
+
+/*Styling and positioning for the each section of the footer*/
+
+/*Generic styling for all parts of the footer*/
+.footer3
+{
+	position: relative;
+	background-color:#003263;
+	width: 95.5vw;
+	height: 8.5vw;
+	bottom: 3.25vw;
+	left: 1.5vw;
+	color:white;
+}
+
+/*Aligns the left side of the footer *Chapter, Members*/
+.leftFooter
+{
+	float: left;
+	padding-left: 20vw;
+	font-size: 1vw;
+}
+
+/*Aligns the right side of the footer *School, Location*/
+.rightFooter
+{
+	float: right;
+	padding-right: 20vw;
+	font-size: 1vw;
+}
+
+/*Aligns the middle of the footer *Year*/
+.middleFooter
+{
+	position:absolute;
+	top: 5vw;
+	left:45vw;
+	color:white;
+	font-size: 1vw;
+}
+
+/* Defines font to be utilized */
+@font-face
+{
+	font-family: CopperplateGothicBold;
+	src: url('CopperplateGothicBold.ttf');
+}
+
+/* Defines font to be utilized */
+@font-face
+{
+	font-family: Castelar;
+	src: url('Castelar.ttf');
+}
+
+/* Defines font to be utilized */
+@font-face
+{
+	font-family: ComScrpt;
+	src: url('ComScrpt.ttf');
+}
+
+/* Styles slideshow content */
+.mySlides
+{
+	display: none;
+	width: 95.5vw;
+	height: 30vw;
+}
+
+/* Positions slideshow inner content */
+.slideshow
+{
+	width: 95.5vw;
+	padding-top: 10vw;
+	padding-left: 1.5vw;
+}
+
+/* Gives meal div blue color and position */
+.mealTypes
+{
+	width: 95.5vw;
+	height: 5vw;
+	background-color: #003263;
+	left: 1.5vw;
+	position: relative;
+}
+
+/* Positions breakfast tab */
+#meal1
+{
+	margin-left: 8vw;
+	position: absolute;
+	top: 1.75vw;
+}
+
+/* Positions lunch tab */
+#meal2
+{
+	margin-left: 45vw;
+	position: absolute;
+	top: 1.75vw;
+}
+
+/* Positions dinner tab */
+#meal3
+{
+	margin-left: 80vw;
+	position: absolute;
+	top: 1.75vw;
+}
+
+/* Removes default styling on tab buttons */
+button
+{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+button:focus
+{
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+/* Styles meal tabs */
+.tablinks
+{
+	font-family: Castelar;
+	color: #ffffff;
+	font-size: 1.5vw;
+}
+
+/* Makes tab content on other tabs invisible */
+.tabcontent
+{
+	display: none;
+}
+
+
+/* Positioning and styling of breakfast tab */
+#Breakfast
+{
+	display: block;
+	background-color: #e3c197;
+	position: relative;
+	bottom: 4vw;
+	width: 95.5vw; 
+	left: 1.5vw;
+}
+
+/*Sub heading style*/
+.subMeal
+{
+	font-family: ComScrpt;
+	text-align: center;
+	font-size: 4vw;
+	position: relative;
+	top: 2vw;
+	text-decoration: underline;
+}
+
+/* Image of astro doughnuts styled and positioned */
+#astroImg
+{
+	position: relative;
+	left: 10vw;
+	top: 2.5vw;
+	width: 30vw;
+	height: 20vw;
+}
+
+/* Name of restaurant styled and positioned */
+.name1
+{
+	position: relative;
+	left: 60vw;
+	bottom: 17vw;
+	font-size: 2vw;
+}
+
+/* phone number of restaurant styled and positioned */
+.num1
+{
+	position: relative;
+	left: 60vw;
+	bottom: 19vw;
+	font-size: 2vw;
+}
+
+/* website of restaurant styled and positioned */
+.site1
+{
+	position: relative;
+	left: 57.75vw;
+	bottom: 17vw;
+	-webkit-text-stroke: 0px;
+	color: #000000;
+	font-size: 2vw;
+}
+
+/* restaurant address icon styled and positioned */
+.placeIcon1
+{
+	position: relative;
+	left: 25vw;
+	bottom: 12.75vw;
+	width: 2vw;
+	height: 2vw;
+}
+
+/* phone icon of restaurant styled and positioned */
+.phoneIcon1
+{
+	position: relative;
+	left: 55.25vw;
+	bottom: 14.5vw;
+	width: 2vw;
+	height: 2vw;
+}
+
+/* website icon styled and positioned */
+.siteIcon1
+{
+	position: relative;
+	left: 55.25vw;
+	bottom: 16.5vw;
+	width: 2vw;
+	height: 2vw;
+}
+
+/* Border around breakfast options */
+#border_breakfast
+{
+	border: .5vw solid #003263;
+	height: 25vw;
+}
+
+/* Positioning and styling of lunch tab */
+
+#Lunch
+{
+	display: block;
+	background-color: #e3c197;
+	position: relative;
+	bottom: 4vw;
+	width: 95.5vw; 
+	left: 1.5vw;	
+}
+
+/*Sub heading style*/
+.subMeal
+{
+	font-family: ComScrpt;
+	text-align: center;
+	font-size: 4vw;
+	position: relative;
+	top: 2vw;
+	text-decoration: underline;
+}
+
+/* Image of keren food styled and positioned */
+#kerenImg
+{
+	position: relative;
+	left: 10vw;
+	top: 2.5vw;
+	width: 30vw;
+	height: 20vw;
+}
+
+/* Border around lunch options */
+#border_lunch
+{
+	border: .5vw solid #003263;
+	height: 25vw;
+}
+
+/* Dinner Tab */
+
+/* Positioning and styling of Dinner tab */
+#Dinner
+{
+	display: block;
+	background-color: #e3c197;
+	position: relative;
+	bottom: 4vw;
+	width: 95.5vw; 
+	left: 1.5vw;	
+}
+
+/* Image of hanks food styled and positioned */
+#hanksImg
+{
+	position: relative;
+	left: 10vw;
+	top: 2.5vw;
+	width: 30vw;
+	height: 20vw;
+}
+
+/* Border around dinner options */
+#border_dinner
+{
+	border: .5vw solid #003263;
+	height: 25vw;
+}
+
+/* removes overflow from dining page */
+#diningBody
+{
+	overflow-x: hidden;
+}
+
+/* ----------------------------- Beginning of dining page media queries --------------------- */
+
+
+
+/* ----------------------------- End of dining page media queries --------------------- */
+
+/* -------------------------------- End of dining page CSS ---------------------------- */
+
+/* -------------------------------- Beginning of transit page CSS ---------------------------- */
+
+/* Defines font to be utilized */
+@font-face
+{
+	font-family: CopperplateGothicBold;
+	src: url('CopperplateGothicBold.ttf');
+}
+
+
+/* Outline of BPA logo and rectangular borders */
+.navsetup3
+{
+	position: absolute;
+	left: 0.5vw;
+	width: 97vw;
+	height: auto;
+}
+
+
+/* style for each navigation item on the bar */
+.navitems
+{
+	display: inline;
+	text-decoration: none;
+	padding: 1.2em;
+	font-size: 2.5vw;
+    font-weight: bold;
+	-webkit-text-stroke: 1vw #003263;
+
+}
+
+/* Removes text underline from nav items */
+.navlinks
+{
+	text-decoration: none;
+}
+
+/* unvisited and visited nav link */
+.navlinks:link, .navlinks:visited
+{
+    color: rgb(227, 193, 151);
+	text-decoration: none;
+	-webkit-text-stroke: .1vw #003263;
+}
+
+/*--- Footer ---*/
+#footerTrans
+{
+	position: relative;
+	background-color: #003263;
+	width: 95.5vw;
+	height: 8.5vw;
+	top: 145vw;
+	left: 1.35vw;
+	color: white;
+}
+
+/*Aligns the left side of the footer*/
+.leftFooter
+{
+	float: left;
+	padding-left: 22vw;
+	font-size: 1vw;
+}
+
+/*Aligns the right side of the footer*/
+.rightFooter
+{
+	float: right;
+	padding-right: 22vw;
+	font-size: 1vw;
+}
+
+.middleFooter
+{
+	position: absolute;
+	top: 5vw;
+	left:45vw;
+	color:white;
+	font-size: 1vw;
+}
+
+/*-----------------------------*/
+
+/* plan transit text */
+#headerTran
+{
+	position: absolute;
+	font-size: 4.5vw;
+	color: #1a1a1a;
+	text-decoration: underline;
+	top: 10vw;
+	left: 33vw;
+	text-align: center;
+}
+
+/*------------------------------------------*/
+
+/*--- In-page navigation Icons ---*/
+#car
+{
+	position: absolute;
+	top: 22vw;
+	left: 15vw;	
+	transition: transform .2s; /* animation */
+	height: 15vw;
+	width: 15vw;
+}
+
+/* effect when car icon is hovered over */
+#car:hover
+{
+	transform: scale(1.3);
+}
+
+/* bike image */
+#bike
+{
+	position: absolute;
+	top: 22vw;
+	left: 42vw;	
+	transition: transform .2s; /* animation */
+	height: 15vw;
+	width: 15vw;
+}
+
+/* effect when bike icon is hovered over */
+#bike:hover
+{
+	transform: scale(1.3);
+}
+
+/* train image */
+#train
+{
+	position: absolute;
+	top: 22vw;
+	left: 70vw;	
+	transition: transform .2s; /* animation */
+	height: 15vw;
+	width: 15vw;
+}
+
+/* effect when subway icon is hovered over */
+#train:hover
+{
+	transform: scale(1.3);
+}
+/*-----------------------------*/
+
+/*--- Automobile Boxed Content ---*/
+
+/* main div containing text */
+#tan1
+{
+    position: absolute;	
+	top: 48vw;
+	left: 5vw;
+}
+
+/* yellow cab logo */
+#cablogo
+{
+    position: relative;	
+	top: 3vw;
+	left: 3.5vw;
+	height: 10vw;
+	width: 12vw;
+}
+
+/* uber logo */
+#uberlogo
+{
+    position: relative;	
+	top: 7vw;
+	left: 4.5vw;
+	height: 8vw;
+	width: 11vw;
+}
+
+/* lyft logo */
+#lyftlogo
+{
+    position: relative;	
+	top: 11vw;
+	left: 5vw;
+	height: 8vw;
+	width: 10vw;
+}
+
+/* entire div box with border(1) */
+.tanbox
+{
+    background-color: rgb(227, 193, 151);
+	height: 40vw ;
+	width: 20vw;
+	border: .5vw solid #003263;
+}
+
+/* background of blue behind white text */
+.bluebox
+{
+	background-color: #003263;
+	height: 40vw ;
+	width: 62.5vw;
+	border: .5vw solid rgb(227, 193, 151);
+}
+
+/* blue div */
+#blue1
+{
+    position: absolute;
+    top: 48vw;
+	left: 30vw;	
+
+}
+
+/* yellow cab header */
+.transHead1
+{
+	color: #ffffff;
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+/* Uber header */
+#uberHead
+{
+	color: #ffffff;
+	font-size: 1.5vw;
+	position: absolute;
+	top: 13vw;
+	left: 29vw;
+}
+
+/* Lyft header */
+#lyftHead
+{
+	color: #ffffff;
+	font-size: 1.5vw;
+	position: absolute;
+	top: 25vw;
+	left: 29vw;
+}
+
+/* pedicab header */
+#pediHead
+{
+	color: #ffffff;
+	font-size: 1.5vw;
+	position: absolute;
+	top: 12.5vw;
+	left: 27.5vw;
+}
+
+/* segway header */
+#segwayHead
+{
+	color: #ffffff;
+	font-size: 1.5vw;
+	position: absolute;
+	top: 25vw;
+	left: 26.5vw;
+}
+
+/* yellow cab main content */
+.transInfo1
+{
+	position: absolute;
+	top: 2vw;
+	left: 6vw;
+	color: #ffffff;
+	font-size: 1.18vw;
+	width: 50vw;
+	
+}
+
+/* uber main content */
+.transInfo2
+{
+	position: absolute;
+	top: 15vw;
+	left: 6vw;
+	color: #ffffff;
+	font-size: 1.18vw;
+	width: 50vw;
+}
+
+/* lyft main content */
+#transInfo2
+{
+	position: absolute;
+	top: 14vw;
+	left: 6vw;
+	color: #ffffff;
+	font-size: 1.18vw;
+	width: 50vw;
+}
+
+/* capital bikeshare content */
+.transInfo3
+{
+	position: absolute;
+	top: 27vw;
+    left: 6vw;
+	color: #ffffff;
+	font-size: 1.18vw;
+	width: 50vw;
+}
+
+/* metro content */
+.metroHead
+{
+    margin-top: 2vw;	
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.5vw;
+}
+
+/* metro data content */
+#metroInfo1
+{
+    position: absolute;
+	top: 3.5vw;
+	left: 6vw;
+	color: #ffffff;
+	font-size: 1.3vw;
+	width: 25vw;	
+}
+
+/* metro data content second section */
+#metroInfo2
+{
+    position: absolute;
+	top: 17vw;
+	left: 6vw;
+	color: #ffffff;
+	font-size: 1.3vw;
+	width: 25vw;	
+}
+
+/* yellow cab second link */
+#cabLink
+{
+	color: #ffffff;
+	position: absolute;
+	top: 10vw;
+	left: 6vw;
+	font-size: 1.18vw;
+}
+
+/* uber tab link */
+#uberLink
+{
+	color: #ffffff;
+	position: absolute;
+	top: 23vw;
+	left: 6vw;
+	font-size: 1.18vw;
+}
+
+/* lyft transport method link */
+#lyftLink
+{
+	color: #ffffff;
+	position: absolute;
+	top: 32vw;
+	left: 6vw;
+	font-size: 1.18vw;
+}
+
+/* capital bikeshare link content */
+#capitalLink
+{
+	color: #ffffff;
+	position: absolute;
+	top: 10vw;
+	left: 6vw;
+	font-size: 1.18vw;
+}
+
+/* pedicab link content */
+#pediLink
+{
+	color: #ffffff;
+	position: absolute;
+	top: 23vw;
+	left: 6vw;
+	font-size: 1.18vw;
+}
+
+/* segway link content */
+#segwayLink
+{
+	color: #ffffff;
+	position: absolute;
+	top: 35vw;
+	left: 6vw;
+	font-size: 1.18vw;
+}
+
+/* metro link content */
+#trainLink
+{
+    font-size: 1.25vw;	
+	position: absolute;
+	top: 28.5vw;
+	left: 6vw;
+	color: #ffffff;
+} 
+
+/* subway map types */
+#mapLink
+{
+    font-size: 1.25vw;	
+	position: absolute;
+	top: 32vw;
+	left: 6vw;
+	color: #ffffff;
+} 
+
+/*-----------------------------*/
+
+/*--- Bicycle Boxed Content ---*/
+
+/* second div */
+#tan2
+{
+    position: absolute;	
+	top: 93vw;
+	left: 5vw;
+	margin: 0;
+	padding: 0;
+}
+
+/* capital bikeshare logo */
+#bikesharelogo
+{
+    position: relative;	
+	top: 3vw;
+	left: 3vw;
+	height: 9vw;
+	width: 14vw;
+}
+
+/* pedicab logo */
+#pedicablogo
+{
+    position: relative;	
+	top: 7.5vw;
+	left: 3.5vw;
+	height: 10vw;
+	width: 13vw;
+}
+
+/* segway logo */
+#segwaylogo
+{
+    position: relative;	
+	top: 12vw;
+	left: 3.2vw;
+	height: 6vw;
+	width: 14vw;
+}
+
+/* second div */
+#blue2
+{
+    position: absolute;
+	top: 93vw;
+	left: 30vw;	
+}
+
+/*-----------------------------*/
+
+/*--- Bicycle Boxed Content ---*/
+#tan3
+{
+    position: absolute;	
+	top: 138vw;
+	left: 5vw;
+}
+
+/* metro logo tab */
+#metrologo
+{
+    position: relative;	
+	top: 13vw;
+	left: 1.5vw;
+	height: 13vw;
+	width: 17vw;
+}
+
+/* map of subway line */
+#trainmap
+{
+    position: absolute;
+	top: 8vw;
+	left: 35vw;
+	height: 22vw;
+	width: 22vw;
+}
+
+/* last blue div with content */
+#blue3
+{
+    position: absolute;
+	top: 138vw;
+	left: 30vw;	
+}
+
+/* ----------------------------- Beginning of transit page media queries --------------------- */
+
+
+
+/* ----------------------------- End of transit page media queries --------------------- */
+
+/* -------------------------------- End of transit page CSS ---------------------------- */
+

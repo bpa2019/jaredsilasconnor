@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+	    <!-- 
+		
+		Authors: Silas Dias, Connor Rodrigues, and Jared Brudner
+		Date Created: 11/28/2018
+		Last Modified: 1/18/2019
+		
+		-->
+	
+		<!-- Name of this page -->
+        <title>Transit</title>
+		
+		<!-- Provision of meta data in this HTML document -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Link to external CSS stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<!-- Displays a BPA image for favicon -->
+		<link rel="icon" href="images/favicon.jpg" type="image/jpg" sizes="16x16">
+		
+	</head>
+
+	<body>
+	
+	    <!-- Div container for navigation menu -->
+	    <div class="topnav">
+	
+			<!-- BPA logo and borders in an image -->
+	        <img src="images/navigation.png" class="navsetup3" draggable="false"/>
+
+			<!-- Container of nav links -->
+	        <ul class="nav">
+				
+				<!-- Each individual navigation link -->
+		        <li class="navitems"><a href="index.html" class="navlinks">HOME</a></li>
+		        <li class="navitems"><a href="attractions.html" class="navlinks">ATTRACTIONS</a></li>
+		        <li class="navitems"><a href="dining.html" class="navlinks">DINING</a></li>
+		        <li class="navitems"><a href="transit.html" class="navlinks">TRANSIT</a></li>
+
+		    </ul>
+		
+
+	    </div>
+		
+		<img src="images/city5.jpg" class = "headerImage" draggable="false" />
+		
+		<h1 id="headerTran">Plan Your Transit!</h1>
+		
+		<!-- In-page navigation (car, bike, train) -->
+		<img src="images/vroomvroom.png" alt="Automobiles" id="car" onclick="startScroll(0);"/>
+		<img src="images/ringring.png" alt="Bicycle" id="bike" onclick="startScroll(1);"/>
+		<img src="images/choochoo.png" alt="Metro" id="train" onclick="startScroll(2);"/>
+		
+		
+		<div class="tanbox" id="tan1">
+		
+		
+		    <img src="images/transportationLogos/yellowcablogo.png" alt="Cab" id="cablogo"/>
+			
+			<img src="images/transportationLogos/uberlogo.png" alt="Uber" id="uberlogo"/>
+			
+			<img src="images/transportationLogos/lyftlogo.png" alt="Lyft" id="lyftlogo"/>
+		
+		</div>
+		
+		<div class="bluebox" id="blue1">
+		
+			<!-- Cab, Uber and Lyft content Content -->
+			
+			<!-- Transportation text heading -->
+			<h1 class="transHead1">Yellow Cab Company of DC Inc.</h1>
+			
+			<!-- Text describing the taxi company -->
+			<p class="transInfo1">"Our main priority is to provide committed service to our customers. 
+			Yellow Cab Company of D.C. will pick you up from anywhere in the city 
+			and deliver you promptly and safely to anywhere in the continental United States! 
+			No group is too large no destination is too far, we always go the extra mile for 
+			you here at Yellow Cab." - dcyellowcab.com</p>
+			
+			<!-- Hyper link for website -->
+			<a href="https://dcyellowcab.com/" id="cabLink" target="_blank">Click here to visit Yellow Cab Website!</a>
+			
+			<!-- Transportation text heading -->
+			<h1 id="uberHead">Uber</h1>
+			
+			<!-- Text describing the Uber company -->
+			<p class="transInfo2">"Uber is a convenient, inexpensive and safe taxi service. 
+			Hire a private driver to pick you up &amp; take you to your destination with the tap 
+			of a button on any smart phone device. A nearby driver often arrives to pick you 
+			up within minutes. Not only is this an on-demand car service, but you can even 
+			watch as your driver is en-route to come pick you up." - uber.com</p>
+			
+			<!-- Hyper link for website -->
+			<a href="https://www.uber.com/cities/washington-DC/" id="uberLink" target="_blank">Click here to visit the Uber Website!</a>
+			
+			<!-- Transportation text heading -->
+			<center><h1 id="lyftHead">Lyft</h1></center>
+			
+			<!-- Text describing the Lyft company -->
+			<p class="transInfo3">"Similar to Uber, count on Lyft for reliable, affordable rides in minutes. The Lyft app matches you with local drivers in just a few taps. Request, ride, then simply pay in the app." - lyft.com</p>
+			
+			<!-- Hyper link for website -->
+			<a href="https://www.lyft.com/rider/cities/washington-dc" id="lyftLink" target="_blank">Click here to visit the Lyft Website!</a>	
+		
+		</div>
+		
+		<div class="tanbox" id="tan2">
+		    
+			<img src="images/transportationLogos/bikesharelogo.png" alt="Bikeshare" id="bikesharelogo" />
+			
+			<img src="images/transportationLogos/pedicablogo.png" alt="Pedicab" id="pedicablogo" />
+			
+			<img src="images/transportationLogos/capitalsegwaylogo.png" alt="Segway" id="segwaylogo" />
+			
+		</div>
+		
+		<div class="bluebox" id="blue2">
+		
+			<!-- Capital Bikeshare, Pedicab and Capital Segway content Content -->
+			
+			<!-- Transportation text heading -->
+			<h1 class="transHead1">Capital Bikeshare</h1>
+			
+			<!-- Text describing the Capital Bikeshare company -->
+			<p class="transInfo1">"Capital Bikeshare, like other bikeshare systems, consists of a fleet of specially designed, sturdy and durable bikes that are locked into a network of docking stations throughout the region. The bikes can be unlocked from any station and returned to any station in the system, making them ideal for one-way trips." - capitalbikeshare.com</p>
+			
+			<!-- Hyper link for website -->
+			<a href="https://www.capitalbikeshare.com/" id="capitalLink" target="_blank">Click here to visit the Capital Bikeshare Website!</a>
+			
+			<!-- Transportation text heading -->
+			<h1 id="pediHead">DC Pedicab</h1>
+			
+			<!-- Text describing the DC Pedicab company -->
+			<p id="transInfo2">"Our pedicabs, which are human-powered passenger tricycles with canopy shelters and comfortable seating for two to three adults plus children, and we are ready to take you on a memorable sightseeing tour tailored to your schedule and interests.  Our co-op of five guides has over 45 years of collective experience guiding thousands of sightseeing tours in DC, and we are ready to convey that dedication and pride in our craft during your time with us." - dcpedicab.com</p>
+			
+			<!-- Hyper link for website -->
+			<a href="http://www.dcpedicab.com/en"id="pediLink" target="_blank">Click here to visit the DC Pedicab Website!</a>
+			
+			<!-- Transportation text heading -->
+			<h1 id="segwayHead">Capital Segway</h1>
+			
+			<!-- Text describing the Capital Segway -->
+			<p class="transInfo3">"Capital Segway offers the only Segway&reg; Personal Transporter (PT) Authorized tour of Washington, DC. Sightseeing on our guided Segway&reg; PT Tours French &amp; German tours available on request! It is a unique and fun way to get to know the nation's capital. You will glide around the streets in style on one of our state-of-the-art Segway PTs." - capitalsegway.com</p>
+			
+			<!-- Hyper link for website -->
+			<a href="https://www.capitalsegway.com/" id="segwayLink" target="_blank">Click here to visit the Capital Segway Website!</a>
+			
+			
+		
+		</div>
+		
+		<div class="tanbox" id="tan3">
+		
+		    <img src="images/transportationLogos/METROlogo.png" alt="Train" id="metrologo"/>
+		
+		</div>
+		
+		<div class="bluebox" id="blue3">
+		
+		    <!-- Transportation text heading -->
+			<h1 class="metroHead">Washington Metropolitan Area Transit Authority</h1>
+		
+		    <p id="metroInfo1">"Metrorail provides safe, clean, reliable transit service for more than 600,000 customers a day throughout the Washington, DC area. The Metrorail system has six color-coded rail lines: Red, Orange, Silver, Blue, Yellow, and Green. The layout of the system makes it possible to travel between any two stations with no more than a single transfer." - wmata.com</p>
+			
+			<p id="metroInfo2">"Metrobus provides more than 400,000 trips each weekday serving 11,500 bus stops in the District of Columbia, Maryland, and Virginia. Metrobus is the sixth busiest bus agency in the United States, with a fleet of more than 1,500 buses operating on 325 routes." - wmata.com</p>
+			
+			<!-- Hyper link for website -->
+			<a href="https://www.wmata.com/" id="trainLink" target="_blank">Click here to visit the Metro!</a>
+			
+			<a href="https://www.wmata.com/schedules/maps/" target="_blank" id="mapLink">Click here for maps of the bus and train lines</a>
+			
+			<img src="images/transportationLogos/TrainMap.png" alt="map" id="trainmap"/>
+			
+		</div>
+		
+		
+	    <!-- Bottom of page footer container -->
+	    <div id="footerTrans">
+		
+		    <!-- Bottom left side footer content -->
+		    <div class="leftFooter">
+                <p>Chapter: BPA(435) Website Design Team</p>
+                <p>Members: Connor Rodrigues, Jared Brudner, Silas Dias</p>
+			</div>
+			
+			<!-- Bottom right side footer content -->
+			<div class="rightFooter">
+                <p>School: Assabet Valley Regional Technical High School</p>
+			    <p>Location: Marlborough, Massachusetts</p>
+			</div>
+			
+			<div class="middleFooter">
+			    <p>Year: 2019</p>
+	        </div>
+        </div>
+		
+		
+	    <script>
+		
+			var end;
+			
+			var points = [window.innerHeight * .8, window.innerHeight * 1.6, window.innerHeight * 3] // index of points on page for scroll to reach
+			
+			var frames;
+			
+			var increment;
+			
+			var c = 0;				              // Creates counter variable
+			
+			function startScroll(endPoint) {
+			
+				end = points[endPoint];           // 
+				
+				setup();						  // Calls scroll setup function
+				
+				scrollWindow();
+			
+			}
+			
+			function scrollWindow() {            
+			
+				window.scrollBy(0, increment);    // Scrolls window down by increment
+				
+				c++;  							  // c = c + 1 (counter)
+				
+				if (c != frames) {                // If the page isn't done scrolling
+				
+					setTimeout(scrollWindow, 16); // Run this function again in 16 milliseconds
+					
+				}
+			
+				else {
+				
+					c = 0;						  // Resets counter
+					
+				}
+			
+			}
+			
+			function setup() {
+			
+				// end = window.innerHeight;
+				
+				frames = 30;                      // Duration of scroll
+				
+				increment = end / frames;
+				
+				// document.body.addEventListener('touchmove', function(e) { e.preventDefault(); },{ passive: false })
+			
+			}
+		
+		</script>	
+	
+	</body>
+
+</html>
