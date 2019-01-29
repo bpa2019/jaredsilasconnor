@@ -25,7 +25,7 @@
 		
 	</head>
 
-	<body onload="onload()" id="diningBody">
+	<body onload="onload()" id="diningBody" style="display:none;">
 	
 	    <!-- Div container for navigation menu -->
 	    <div class="topnav">
@@ -346,6 +346,13 @@
 		
 		<script>
 		
+		    function onload() {
+				
+				openCity(null, "Breakfast")  // Call of function
+			
+				carousel();  // Runs Slideshow
+			}
+		
 			// Automatic Image Slideshow
 			
 			var myIndex = 0;
@@ -367,6 +374,8 @@
 			if (myIndex > x.length) {myIndex = 1}
 			
 			x[myIndex-1].style.display = "block";  
+			
+			document.body.style.display = "";
 			
 			setTimeout(carousel, 1000); // Changes image every 1 seconds
 			
@@ -398,12 +407,7 @@
 			  
 			}
 			
-			function onload() {
-				
-				openCity(null, "Breakfast")  // Call of function
 			
-				carousel();  // Runs Slideshow
-			}
 		
         </script>
 		
