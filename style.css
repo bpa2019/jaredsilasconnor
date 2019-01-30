@@ -202,9 +202,9 @@
 
 /* Portrait and landscape for all ipads */
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-{
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px)
+	{
     .removed
     {
 		display: none;
@@ -223,14 +223,14 @@ and (max-device-width : 1024px)
 	{
 		top: 6.75vw;
 	}
-}
+	}
 
 
 /* Portrait and landscape on iphone 6/7/8 */
 @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px)
-{
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px)
+	{
     .removed
     {
 		display: none;
@@ -257,8 +257,19 @@ and (max-device-width : 667px)
     {
 	    margin-top: 3vw;
     }
-}
+	}
 
+/* Portrait and landscape for pixel 2 xl */
+@media screen
+    and (device-width: 412px) 
+    and (device-height: 823px) 
+	{
+	#navHome
+    {
+	    margin-top: 3vw;
+    }	
+	}
+	
 
 /* ----------------------------- End of home page media queries --------------------- */
 
