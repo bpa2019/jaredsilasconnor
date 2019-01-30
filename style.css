@@ -14,26 +14,26 @@
 
 /* -------------------------------- Beginning of home page CSS ---------------------------- */
 
-/* positions all body content */
-#homeMain
-{
-	margin-top: 2vw;
-}
 
-/* Styling for navigation bar div */
-#navigation
+/* position's the BPA logo image */
+.navsetup0
 {
 	position: absolute;
+	left: .5vw;
+	width: 97vw;
+	margin-top: 4vw;
 }
 
-/* Outline of BPA logo and rectangular borders */
-.navImg
+/* Navigation links container */
+#navHome
 {
-	width: 93.5vw;
-	height: 9vw;
-	top: 4.5vw;
-	left: 1vw;
+	margin: 0;
+	padding: 0;
 	position: absolute;
+	left: 20vw;
+	margin-top: 7.5vw;
+	width: 80vw;
+	height: 10vw;
 }
 
 /* Styling for the specific nav links */
@@ -70,10 +70,10 @@
 .footer1 
 {
    position: relative;
-   left: 2.45vw;
-   width: 92vw;
+   left: 1.5vw;
+   width: 95.5vw;
    height: 8vw;
-   top: 15vw;
+   top: 14.5vw;
    background-color: #003263;
    color: white;
 }
@@ -149,11 +149,11 @@
 /* Styles and positions tan div container */
 #contentMiddle
 {
-	width: 92.1vw;
-	height: 39vw;
+	width: 95.5vw;
+	height: 35vw;
 	position: relative;
 	background-color: #e3c197;
-	left: 2.4vw;
+	left: 1.5vw;
 	top: 14vw;
 }
 
@@ -180,10 +180,10 @@
 #nlcImg
 {
 	position: absolute;
-	left: 47vw;
-	top: 7vw;
-	width: 55vw;
-	height: 23vw;
+	left: 45vw;
+	top: 5vw;
+	width: 60vw;
+	height: 26vw;
 }
 
 /* Style and limited positioning for dress code link */
@@ -200,134 +200,6 @@
 
 /* ----------------------------- Home page media queries --------------------- */
 
-/* Landscape phones and down */
-@media (max-width: 480px) 
-{
-	#dressCode_link
-	{
-		top: 9vw;
-	}
-	#navContainer
-	{
-		top: 6vw;
-	}
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) 
-{
-	#dressCode_link
-	{
-		top: 6vw;
-	}
-	#navContainer
-	{
-		top: 6vw;
-	}
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 736px) {
-	#dressCode_link
-	{
-		top: 6vw;
-	}
-	#navContainer
-	{
-		top: 8vw;
-	}
-}
-
-/* Landscape tablet mode (ipad 2/3) */
-@media (max-width: 781px) 
-{
-	#dressCode_link
-	{
-		top: 8vw;
-	}
-	#navContainer
-	{
-		top: 8vw;
-	}
-}
-
-/* iphone x in portrait mode */
-@media (max-width: 420px) 
-{
-	#dressCode_link
-	{
-		top: 8vw;
-	}
-	#navContainer
-	{
-		top: 6.5vw;
-	}
-}
-
-/* Max width query at 286px */
-@media only screen and (max-width: 286px) 
-{
-  #navContainer 
-  {
-	  top: 4.5vw;
-  }
-  #dressCode_link
-  {
-	width: 35vw;
-  }
-}
-
-/* Max width query at 397px and minimum at 287px */
-@media only screen and (min-device-width : 287px) 
-and (max-device-width : 397px)
-{
-  #navContainer 
-  {
-	  top: 6vw;
-  }
-  .middleFooter 
-  {
-	  width: 5vw;
-  }
-  #dressCode_link
-  {
-	width: 50vw;
-  }
-}
-
-/* Max width query at 515px and minimum at 484px */
-@media only screen and (min-device-width : 484px) 
-and (max-device-width : 515px)
-{
-  #navContainer 
-  {
-	  top: 7vw;
-  }
-  .middleFooter 
-  {
-	  width: 5vw;
-  }
-  #dressCode_link
-  {
-	width: 50vw;
-  }
-}
-
-/* Max width query at 468px and minimum at 292px */
-@media only screen and (min-device-width : 292px) 
-and (max-device-width : 468px)
-{
-    #navContainer 
-    {
-		top: 10vw;
-    }
-    .middleFooter 
-    {
-		width: 5vw;
-    }
-}
-
-
 /* query for all devices max-width at 1020px */
 @media all and (max-width: 1020px) 
 {
@@ -335,15 +207,53 @@ and (max-device-width : 468px)
     {
 		display: none;
     }
-    #navContainer
+    body
     {
-	    top: 12vw;
+		background-repeat: no-repeat; 
+        background-position: center;
+        background-size: cover;
     }
+	.navsetup0
+	{
+	    margin-top: 4vw;
+	}
 	#dressCode_link
-    {
-	    top: 11vw;
-    }
+	{
+		top: 5vw;
+	}
 }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px)
+{
+    .removed
+    {
+		display: none;
+    }
+    body
+    {
+		background-repeat: no-repeat; 
+        background-position: center;
+        background-size: cover;
+    }
+	.navsetup0
+	{
+	    margin-top: 0vw;
+	}
+	#navHome
+	{
+		margin-top: 2vw;
+		width: 100vw;
+	}
+	#dressCode_link
+	{
+		top: 3.5vw;
+	}
+}
+
+
+
+
 
 /* ----------------------------- End of home page media queries --------------------- */
 
@@ -357,32 +267,10 @@ and (max-device-width : 468px)
 {
 	position: absolute;
 	left: .5vw;
-	width: 98vw;
+	width: 97vw;
 	height: auto;
 }
 
-/* Navigation links container */
-.nav
-{
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	left: 20vw;
-	top: 4vw;
-	
-}
-
-/* styling for each navagation link */
-.navitems
-{
-	display: inline;
-	text-decoration: none;
-	padding: 1.2em;
-	font-size:2.5vw;
-    font-weight: bold;
-	-webkit-text-stroke: 1vw #003263;
-
-}
 
 /* unvisited and visited nav link */
 .site1:link, .site1:visited
@@ -397,10 +285,10 @@ and (max-device-width : 468px)
 {
 	position: relative;
 	background-color:#003263;
-	width: 96.5vw;
-	height:8.5vw;
+	width: 95.65vw;
+	height: 8.5vw;
 	top: 9vw;
-	left: 1.5vw;
+	left: 1.45vw;
 	color:white;
 }
 
@@ -438,9 +326,9 @@ and (max-device-width : 468px)
 	position: relative;
 	background-size: cover;
 	top: 10vw;
-	width: 97.6%;
+	width: 95.5vw;
 	height: 35vw;
-	left: 1.4vw;
+	left: 1.5vw;
 }
 
 /*Overtlaying Header text for attractions  "Experience History" */
@@ -470,7 +358,7 @@ and (max-device-width : 468px)
 	background-color:#003263; /*BPA Blue*/
 	width: 97.6%;
 	height:80vw;
-	top:10vw;
+	top: 10.75vw;
 	left: 1.4vw;
 }
 /*The tan background above the footer*/
@@ -757,6 +645,20 @@ and (max-device-width : 468px)
     }
 }
 
+/* query for all devices max-width at 1020px */
+@media all and (max-width: 1020px) 
+{
+    .footer2
+	{
+		width: 94vw;
+	}
+	.headerImage
+	{
+		width: 94vw;
+	}
+}
+
+
 /* ----------------------------- End of attractions page media queries --------------------- */
 
 /* -------------------------------- End of attractions page CSS ---------------------------- */
@@ -764,17 +666,11 @@ and (max-device-width : 468px)
 
 /* -------------------------------- Beginning of dining page CSS ---------------------------- */
 
-/* disables vertical scroll */
-body
-{
-	overflow-x: hidden;
-}
-
 /* positionis the BPA logo image */
 .navsetup2
 {
 	position: absolute;
-	left: 1vw;
+	left: .5vw;
 	width: 97vw;
 }
 
@@ -786,18 +682,6 @@ body
 	position: absolute;
 	left: 20vw;
 	top: 4vw;
-}
-
-/* styling for each navagation link */
-.navitems
-{
-	display: inline;
-	text-decoration: none;
-	padding: 1.2em;
-	font-size:2.5vw;
-    font-weight: bold;
-	-webkit-text-stroke: 1vw #003263;
-
 }
 
 /* unvisited and visited nav link */
@@ -816,9 +700,9 @@ body
 	position: relative;
 	background-color:#003263;
 	width: 95.5vw;
-	height:8.5vw;
-	bottom:3.5vw;
-	left: 2vw;
+	height: 8.5vw;
+	bottom: 3.25vw;
+	left: 1.5vw;
 	color:white;
 }
 
@@ -848,18 +732,6 @@ body
 	font-size: 1vw;
 }
 
-/*Header image for the attractions page */
-.headerImage
-{
-	position: relative;
-	background-size: cover;
-	padding-left: ;
-	top: 10vw;
-	width: 97.6%;
-	height: 35vw;
-	left: 1.4vw;
-}
-
 /* Defines font to be utilized */
 @font-face
 {
@@ -871,7 +743,7 @@ body
 @font-face
 {
 	font-family: Castelar;
-	src: url('Castelar.ttf');
+	src: url('CASTELAR.ttf');
 }
 
 /* Defines font to be utilized */
@@ -892,9 +764,9 @@ body
 /* Positions slideshow inner content */
 .slideshow
 {
-	max-width: 100%;
+	width: 95.5vw;
 	padding-top: 10vw;
-	padding-left: 2vw;
+	padding-left: 1.5vw;
 }
 
 /* Gives meal div blue color and position */
@@ -903,7 +775,7 @@ body
 	width: 95.5vw;
 	height: 5vw;
 	background-color: #003263;
-	left: 2vw;
+	left: 1.5vw;
 	position: relative;
 }
 
@@ -972,7 +844,7 @@ button:focus
 	position: relative;
 	bottom: 4vw;
 	width: 95.5vw; 
-	left: 2vw;
+	left: 1.5vw;
 }
 
 /*Sub heading style*/
@@ -1071,7 +943,7 @@ button:focus
 	position: relative;
 	bottom: 4vw;
 	width: 95.5vw; 
-	left: 2vw;	
+	left: 1.5vw;	
 }
 
 /*Sub heading style*/
@@ -1112,7 +984,7 @@ button:focus
 	position: relative;
 	bottom: 4vw;
 	width: 95.5vw; 
-	left: 2vw;	
+	left: 1.5vw;	
 }
 
 /* Image of hanks food styled and positioned */
@@ -1132,107 +1004,14 @@ button:focus
 	height: 25vw;
 }
 
+/* removes overflow from dining page */
+#diningBody
+{
+	overflow-x: hidden;
+}
+
 /* ----------------------------- Beginning of dining page media queries --------------------- */
 
-/* Landscape phones and down */
-@media (max-width: 480px) 
-{
-	.name1 
-    {
-		bottom: 19vw;
-    }
-    .num1 
-    {
-		bottom: 22.5vw;
-    }
-    .site1
-    {
-		bottom: 22.5vw;
-		left: 57vw;
-    }
-    .placeIcon1
-    {
-		position: relative;
-		left: 25vw;
-		bottom: 13.5vw;
-		width: 2vw;
-		height: 2vw;
-    }
-    .phoneIcon1
-    {
-		position: relative;
-		left: 56.25vw;
-		bottom: 17.25vw;
-		width: 2vw;
-		height: 2vw;
-	}
-	.siteIcon1
-	{
-		position: relative;
-		left: 56.25vw;
-		bottom: 22vw;
-		width: 2vw;
-		height: 2vw;
-	}
-	.navsetup
-	{
-		left: 2.5vw;
-	}
-	.footer3
-    {
-	left: 5vw;
-    }
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) 
-{
-	.name1 
-    {
-		bottom: 19vw;
-    }
-    .num1 
-    {
-		bottom: 22.5vw;
-    }
-    .site1
-    {
-		bottom: 22.5vw;
-		left: 57vw;
-    }
-    .placeIcon1
-    {
-		position: relative;
-		left: 25vw;
-		bottom: 13.5vw;
-		width: 2vw;
-		height: 2vw;
-    }
-    .phoneIcon1
-    {
-		position: relative;
-		left: 56.25vw;
-		bottom: 17.25vw;
-		width: 2vw;
-		height: 2vw;
-	}
-	.siteIcon1
-	{
-		position: relative;
-		left: 56.25vw;
-		bottom: 22vw;
-		width: 2vw;
-		height: 2vw;
-	}
-	.navsetup
-	{
-		left: 2.5vw;
-	}
-	.footer3
-    {
-	left: 5vw;
-    }
-}
 
 
 /* ----------------------------- End of dining page media queries --------------------- */
@@ -1248,30 +1027,16 @@ button:focus
 	src: url('CopperplateGothicBold.ttf');
 }
 
-/* disables vertical scroll */
-body
-{
-	overflow-x: hidden;
-}
 
 /* Outline of BPA logo and rectangular borders */
 .navsetup3
 {
 	position: absolute;
-	left: 0.7vw;
-	width: 98vw;
+	left: 0.5vw;
+	width: 97vw;
 	height: auto;
 }
 
-/* Navigation items content container */
-.nav
-{
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	left: 20vw;
-	top: 4vw;
-}
 
 /* style for each navigation item on the bar */
 .navitems
@@ -1304,10 +1069,10 @@ body
 {
 	position: relative;
 	background-color: #003263;
-	width: 95vw;
+	width: 95.5vw;
 	height: 8.5vw;
-	top: 146vw;
-	left: 1.4vw;
+	top: 145vw;
+	left: 1.35vw;
 	color: white;
 }
 
@@ -1325,8 +1090,8 @@ body
 	float: right;
 	padding-right: 22vw;
 	font-size: 1vw;
-	
 }
+
 .middleFooter
 {
 	position: absolute;
@@ -1335,31 +1100,19 @@ body
 	color:white;
 	font-size: 1vw;
 }
+
 /*-----------------------------*/
 
-/*Attractions page*/
-.headerImage
-{
-	position: relative;
-	background-size: cover;
-	padding-left: ;
-	top: 10vw;
-	width: 97.6%;
-	height: 35vw;
-	left: 1.4vw;
-}
-
 /* plan transit text */
-.headerText
+#headerTran
 {
 	position: absolute;
 	font-size: 4.5vw;
-	color: black;
+	color: #1a1a1a;
 	text-decoration: underline;
-	top: 7vw;
+	top: 10vw;
 	left: 33vw;
 	text-align: center;
-	
 }
 
 /*------------------------------------------*/
@@ -1368,7 +1121,7 @@ body
 #car
 {
 	position: absolute;
-	top: 20vw;
+	top: 22vw;
 	left: 15vw;	
 	transition: transform .2s; /* animation */
 	height: 15vw;
@@ -1385,7 +1138,7 @@ body
 #bike
 {
 	position: absolute;
-	top: 20vw;
+	top: 22vw;
 	left: 42vw;	
 	transition: transform .2s; /* animation */
 	height: 15vw;
@@ -1402,7 +1155,7 @@ body
 #train
 {
 	position: absolute;
-	top: 20vw;
+	top: 22vw;
 	left: 70vw;	
 	transition: transform .2s; /* animation */
 	height: 15vw;
@@ -1779,95 +1532,7 @@ body
 
 /* ----------------------------- Beginning of transit page media queries --------------------- */
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
-	#metroInfo2
-    {
-	top: 22vw;	
-    }
-	#trainLink
-    {
-	top: 33vw;
-	left: 35vw;
-    } 
-    #mapLink
-    {
-	top: 36vw;
-	left: 35vw;
-    }
-}
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-	#metroInfo2
-    {
-	top: 22vw;	
-    }
-	#trainLink
-    {
-	top: 33vw;
-	left: 35vw;
-    } 
-    #mapLink
-    {
-	top: 36vw;
-	left: 35vw;
-    }
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 736px) {
-	#metroInfo2
-    {
-	top: 22vw;	
-    }
-	#trainLink
-    {
-	top: 33vw;
-	left: 35vw;
-    } 
-    #mapLink
-    {
-	top: 36vw;
-	left: 35vw;
-    }
-}
-
-/* Landscape tablet mode (ipad 2/3) */
-@media (max-width: 781px) {
-	#metroInfo2
-    {
-	top: 22vw;	
-    }
-	#trainLink
-    {
-	top: 33vw;
-	left: 35vw;
-    } 
-    #mapLink
-    {
-	top: 36vw;
-	left: 35vw;
-    }
-}
-
-/* iphone x in portrait mode */
-@media (max-width: 420px) {
-	#metroInfo2
-    {
-	top: 22vw;	
-    }
-    #trainLink
-    {
-	top: 33vw;
-	left: 35vw;
-    } 
-    #mapLink
-    {
-	top: 36vw;
-	left: 35vw;
-    }
-}
 
 /* ----------------------------- End of transit page media queries --------------------- */
 
