@@ -262,7 +262,9 @@
 /* Portrait and landscape for pixel 2 xl */
 @media screen
     and (device-width: 412px) 
-    and (device-height: 823px) 
+    and (device-height: 823px)
+	and (-webkit-device-pixel-ratio: 3.5) 
+    and (orientation: landscape)
 	{
 	#navHome
     {
