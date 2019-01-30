@@ -247,12 +247,16 @@ and (max-device-width : 667px)
 	}
 	#dressCode_link
 	{
-		top: 5vw;
+		top: 6.25vw;
 	}
 	#mainOne
     {    
-	    font-size: 1.2vw;
+	    font-size: 1.3vw;
 	}
+	#navHome
+    {
+	    margin-top: 3vw;
+    }
 }
 
 
