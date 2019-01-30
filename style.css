@@ -229,8 +229,7 @@
 /* Portrait and landscape on iphone 6/7/8 */
 @media only screen 
     and (min-device-width : 375px) 
-    and (max-device-width : 667px)
-	and (orientation : landscape) 
+    and (max-device-width : 667px) 
 	{
     .removed
     {
