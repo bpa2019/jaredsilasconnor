@@ -30,7 +30,7 @@
 	position: absolute;
 	margin: 0;
 	padding-left: 18vw;
-	top: 7.75vw;
+	margin-top: 7.75vw;
 	width: 100vw;
 	height: 10vw;
 }
@@ -43,7 +43,7 @@
 	position: absolute;
 	left: 20vw;
 	margin-top: 7.5vw;
-	width: 80vw;
+	width: 100vw;
 	height: 10vw;
 }
 
