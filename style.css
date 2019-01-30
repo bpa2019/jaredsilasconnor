@@ -6,7 +6,7 @@
 	
     Date Created: 11/29/2018
 	
-    Last Modified: 1/28/2019
+    Last Modified: 1/30/2019
 	
 	Note: Stylesheet for BPA website
 
@@ -24,6 +24,17 @@
 	margin-top: 4vw;
 }
 
+/* Styling for the specific nav links */
+#navContainer
+{
+	position: absolute;
+	margin: 0;
+	padding-left: 18vw;
+	top: 7.75vw;
+	width: 100vw;
+	height: 10vw;
+}
+
 /* Navigation links container */
 #navHome
 {
@@ -33,17 +44,6 @@
 	left: 20vw;
 	margin-top: 7.5vw;
 	width: 80vw;
-	height: 10vw;
-}
-
-/* Styling for the specific nav links */
-#navContainer
-{
-	position: absolute;
-	margin: 0;
-	padding-left: 18vw;
-	top: 7.75vw;
-	width: 100vw;
 	height: 10vw;
 }
 
@@ -224,7 +224,7 @@
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: 762px)
 {
     .removed
     {
@@ -238,21 +238,36 @@
     }
 	.navsetup0
 	{
-	    margin-top: 0vw;
-	}
-	#navHome
-	{
-		margin-top: 2vw;
-		width: 100vw;
+	    margin-top: 2.5vw;
 	}
 	#dressCode_link
 	{
-		top: 3.5vw;
+		top: 5vw;
 	}
 }
 
-
-
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 560px)
+{
+    .removed
+    {
+		display: none;
+    }
+    body
+    {
+		background-repeat: no-repeat; 
+        background-position: center;
+        background-size: cover;
+    }
+	.navsetup0
+	{
+	    margin-top: 2vw;
+	}
+	#dressCode_link
+	{
+		top: 3vw;
+	}
+}
 
 
 /* ----------------------------- End of home page media queries --------------------- */
