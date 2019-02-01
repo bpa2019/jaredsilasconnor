@@ -67,7 +67,7 @@
 }
 
 /*Styling for the footer*/
-.footer1 
+#footer1 
 {
    position: relative;
    left: 1.5vw;
@@ -253,7 +253,15 @@
     {
 	    margin-top: 4vw;
     }
-	}	
+	}
+
+@media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 4)
+	{
+    
+	}		
 
 /* ----------------------------- End of home page media queries --------------------- */
 
@@ -281,7 +289,7 @@
 }
 
 /*Generic styling for all parts of the footer*/
-.footer2
+#footer2
 {
 	position: relative;
 	background-color:#003263;
@@ -296,9 +304,20 @@
 .leftFooter
 {
 	float: left;
-	padding-left: 21vw;
+	margin-left: 5vw;
 	font-size: 1vw;
 	padding-top: .5vw;
+	width: 100%;
+}
+
+/*Aligns the middle of the footer *Year*/
+.middleFooter
+{
+	position: absolute;
+	top: 1.75vw;
+	left: 30vw;
+	color: white;
+	font-size: 1vw;
 }
 
 /*Aligns the right side of the footer *School, Location*/
@@ -308,16 +327,6 @@
 	padding-right: 20vw;
 	font-size: 1vw;
 	padding-top: .5vw;
-}
-
-/*Aligns the middle of the footer *Year*/
-.middleFooter
-{
-	position: absolute;
-	top: 5vw;
-	left: 46vw;
-	color: white;
-	font-size: 1vw;
 }
 
 /*Header image for the attractions page */
@@ -695,7 +704,7 @@
 /*Styling and positioning for the each section of the footer*/
 
 /*Generic styling for all parts of the footer*/
-.footer3
+#footer3
 {
 	position: relative;
 	background-color:#003263;
@@ -706,31 +715,6 @@
 	color:white;
 }
 
-/*Aligns the left side of the footer *Chapter, Members*/
-.leftFooter
-{
-	float: left;
-	padding-left: 20vw;
-	font-size: 1vw;
-}
-
-/*Aligns the right side of the footer *School, Location*/
-.rightFooter
-{
-	float: right;
-	padding-right: 20vw;
-	font-size: 1vw;
-}
-
-/*Aligns the middle of the footer *Year*/
-.middleFooter
-{
-	position:absolute;
-	top: 5vw;
-	left:45vw;
-	color:white;
-	font-size: 1vw;
-}
 
 /* Defines font to be utilized */
 @font-face
@@ -1065,7 +1049,7 @@ button:focus
 }
 
 /*--- Footer ---*/
-#footerTrans
+#footer4
 {
 	position: relative;
 	background-color: #003263;
@@ -1074,31 +1058,6 @@ button:focus
 	top: 145vw;
 	left: 1.35vw;
 	color: white;
-}
-
-/*Aligns the left side of the footer*/
-.leftFooter
-{
-	float: left;
-	padding-left: 22vw;
-	font-size: 1vw;
-}
-
-/*Aligns the right side of the footer*/
-.rightFooter
-{
-	float: right;
-	padding-right: 22vw;
-	font-size: 1vw;
-}
-
-.middleFooter
-{
-	position: absolute;
-	top: 5vw;
-	left:45vw;
-	color:white;
-	font-size: 1vw;
 }
 
 /*-----------------------------*/
