@@ -6,7 +6,7 @@
 	
     Date Created: 11/29/2018
 	
-    Last Modified: 1/31/2019
+    Last Modified: 2/1/2019
 	
 	Note: CSS Stylesheet for BPA site
 
@@ -333,6 +333,76 @@
 	padding-top: .5vw;
 }
 
+/* Social media div */
+.socialmedia
+{
+	position: absolute;
+	top: 2.3vw;
+	width: 1vw;
+	height: 1vw;
+	padding: 1vw;
+	background-color: #e3c197;
+	border-radius: 2vw;
+	border: .3vw solid #253d76;
+}
+
+/* changes div color to inverse */
+.socialmedia:hover
+{
+	background-color: #203A65;
+}
+
+/* Used to fit facebook logo in div */
+#facebook
+{
+	height: 2vw;
+	width: 2vw;
+	position: absolute;
+	top: .5vw;
+	right: .5vw;
+}	
+
+/* Positioning the div with the facebook logo */
+#facebookPosition
+{
+	position: absolute;
+	right: 15vw;
+}
+
+/* styles twitter logo */
+#twitter
+{
+	height: 2vw;
+	width: 2vw;
+	position: absolute;
+	top: .5vw;
+	right: .5vw;
+}
+
+/* Positioning the div with the twitter logo */
+#twitterPosition
+{
+	position: absolute;
+	right: 10vw;
+}
+
+/* styles instagram logo */
+#instagram
+{
+	height: 2vw;
+	width: 2vw;
+	position: absolute;
+	top: .5vw;
+	right: .5vw;
+}
+
+/* Positioning the div with the instagram logo */
+#instagramPosition
+{
+	position: absolute;
+	right: 5vw;
+}
+
 /* Header image for the attractions page */
 .headerImage
 {
@@ -344,7 +414,7 @@
 	left: 1.5vw;
 }
 
-/*Overtlaying Header text for attractions  "Experience History" */
+/* Overlaying Header text for attractions  "Experience History" */
 .headerText1
 {
 	position: absolute;
@@ -354,7 +424,6 @@
 	top: 20vw;
 	left: 27vw;
 	text-align: center;
-	
 }
 
 /* Defines font to be utilized */
