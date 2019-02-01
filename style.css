@@ -14,6 +14,15 @@
 
 /* -------------------------------- Beginning of home page CSS ---------------------------- */
 
+/* div for entire home nav */
+#topnav1
+{
+	position: relative;
+	left: -.5vw;
+	top: 11.5vw;
+	height: 10vw;
+	width: 100vw;
+}
 
 /* position's the BPA logo image */
 .navsetup0
@@ -21,18 +30,7 @@
 	position: absolute;
 	left: .5vw;
 	width: 97vw;
-	margin-top: 4vw;
-}
-
-/* Styling for the specific nav links */
-#navContainer
-{
-	position: absolute;
-	margin: 0;
-	padding-left: 18vw;
-	margin-top: 7.75vw;
-	width: 100vw;
-	height: 10vw;
+	margin-top: 4.25vw;
 }
 
 /* Navigation links container */
@@ -42,7 +40,7 @@
 	padding: 0;
 	position: absolute;
 	left: 20vw;
-	margin-top: 7.5vw;
+	top: 7.5vw;
 	width: 100vw;
 	height: 10vw;
 }
@@ -52,8 +50,8 @@
 {
 	display: inline;
 	text-decoration: none;
-	padding: 1.5em;
-	width: 100vw;
+	padding: 3.5vw;
+	width: 100%;
 	font-size: 2.5vw;
     font-weight: bold;
 }
@@ -66,7 +64,7 @@
 	-webkit-text-stroke: .075vw #003263;
 }
 
-/*Styling for the footer*/
+/* Styling for the footer */
 #footer1 
 {
    position: relative;
@@ -270,6 +268,12 @@
 
 /* ---------------------------- Beginning of attractions page CSS ---------------------------- */
 
+/* Prevents horizontal scroll for attractions page */
+#bg_attractions
+{
+	overflow-x: hidden;
+}
+
 /* position's the BPA logo image */
 .navsetup1
 {
@@ -288,19 +292,19 @@
 	-webkit-text-stroke: .1vw #003263;
 }
 
-/*Generic styling for all parts of the footer*/
+/* Generic styling for all parts of the footer */
 #footer2
 {
 	position: relative;
-	background-color:#003263;
+	background-color: #003263;
 	width: 95.65vw;
 	height: 8.5vw;
 	top: 9vw;
 	left: 1.45vw;
-	color:white;
+	color: white;
 }
 
-/*Aligns the left side of the footer *Chapter, Members*/
+/* Aligns the left side of the footer *Chapter, Members */
 .leftFooter
 {
 	float: left;
@@ -310,7 +314,7 @@
 	width: 100%;
 }
 
-/*Aligns the middle of the footer *Year*/
+/* Aligns the middle of the footer year */
 .middleFooter
 {
 	position: absolute;
@@ -320,7 +324,7 @@
 	font-size: 1vw;
 }
 
-/*Aligns the right side of the footer *School, Location*/
+/* Aligns the right side of the footer School, Location */
 .rightFooter
 {
 	float: right;
@@ -329,7 +333,7 @@
 	padding-top: .5vw;
 }
 
-/*Header image for the attractions page */
+/* Header image for the attractions page */
 .headerImage
 {
 	position: relative;
@@ -360,24 +364,25 @@
 	src: url('CopperplateGothicBold.ttf');
 }
 
-/*The dark blue background the modal is contained in*/
+/* The dark blue background the modal is contained in */
 #modalBackground
 {
 	position: relative;
-	background-color:#003263; /*BPA Blue*/
+	background-color: #003263; /*BPA Blue*/
 	width: 97.6%;
-	height:80vw;
+	height: 80vw;
 	top: 10.75vw;
 	left: 1.4vw;
 }
-/*The tan background above the footer*/
+
+/* The tan background above the footer */
 #tanBackground
 {
 	position: relative;
-	background-color:#f8d09c; /*Tan*/
+	background-color: #f8d09c; /*Tan*/
 	width: 97.6%;
-	height:5vw;
-	top:10vw;
+	height: 5vw;
+	top: 10vw;
 	left: 1.4vw;
 }
 
@@ -409,7 +414,7 @@
 
 /* Caption of Modal Image styling and positioning */
 #caption
- {
+{
     margin: auto;
     display: block;
     width: 70vw;
@@ -420,10 +425,12 @@
     height: 10vw;
 	font-size: 1vw;
 }
+
 #modalCaption
 {
-	font-size:2vw;
+	font-size: 2vw;
 }
+
 /* Modal Animation name and timing */
 .modal-content, #caption 
 {    
@@ -433,14 +440,14 @@
     animation-duration: 0.6s;
 }
 
-/*Zoom effect when a modal opens*/
+/* Zoom effect when a modal opens */
 @-webkit-keyframes zoom 
 {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
 }
 
-/*Zoom effect when a modal opens*/
+/* Zoom effect when a modal opens */
 @keyframes zoom 
 {
     from {transform:scale(0)} 
@@ -468,139 +475,140 @@
     cursor: pointer;
 }
 
-/*White box and Location Icon styling and positioning*/
+/* White box and Location Icon styling and positioning */
 .locationIcon
 {
 	position: absolute;
 	width: 18vw;
-	height:15vw;
+	height: 15vw;
 	top: 1vw;
 	left: 1vw;
-	opacity:0;
+	opacity: 0;
 }
 
-/*displays white box and locaiton icon on hover*/
+/* displays white box and location icon on hover */
 .locationIcon:hover
 {
-	opacity:1;
+	opacity: 1;
 	cursor: pointer;
 }
 
-/*position of the image in the modal*/
+/* position of the image in the modal */
 .generalModal
 {
 	position: relative;
 	width: 18vw;
-	height:15vw;
+	height: 15vw;
 	top: 1vw;
 	left: 1vw;
 }
-/*position of the label under the modal image*/
+
+/* position of the label under the modal image */
 .modalText
 {
 	position: relative;
 	color: white;
 	font-family: Castellar;
-	font-size:1vw;
+	font-size: 1vw;
 	text-align: center;
 	margin-top: 1.8vw;
 }
 
-/*Dark Blue div containing the arlington background*/
+/* Dark Blue div containing the Arlington background */
 #arlingtonModalBg
 {
 	position: relative;
 	width: 20vw;
-	height:20vw;
-	background-color:#001c38;  /*Dark Blu*/
+	height: 20vw;
+	background-color: #001c38;  /* Dark Blue */
 	top: 5vw;
 	left: 10vw;
 }
 
-/*Dark Blue div containing the capitol building background*/
+/* Dark Blue div containing the capitol building background */
 #capitolModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height:20vw;
-	background-color:#001c38;  /*Dark Blu*/
+	height: 20vw;
+	background-color: #001c38;  /* Dark Blue */
 	bottom: 15vw;
 	left: 38vw;
 }
 
-/*Dark Blue div containing the lincoln memorial background*/
+/* Dark Blue div containing the Lincoln memorial background */
 #lincolnModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height:20vw;
-	background-color:#001c38;  /*Dark Blu*/
+	height: 20vw;
+	background-color: #001c38;  /* Dark Blue */
 	bottom: 35vw;
 	left: 67vw;
 }
 
-/*Dark Blue div containing the air and space museum background*/
+/* Dark Blue div containing the air and space museum background */
 #airModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height:20vw;
-	background-color:#001c38;  /*Dark Blu*/
+	height: 20vw;
+	background-color: #001c38;  /* Dark Blue */
 	bottom: 30vw;
 	left: 10vw;
 }
 
-/*Dark Blue div containing the Thomas Jefferson Memorial background*/
+/* Dark Blue div containing the Thomas Jefferson Memorial background */
 #thomasModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height:20vw;
-	background-color:#001c38;  /*Dark Blu*/
+	height: 20vw;
+	background-color: #001c38;  /* Dark Blue */
     bottom: 50vw;
 	left: 38vw;
 }
 
-/*Dark Blue div containing the vietnam memorial background*/
+/* Dark Blue div containing the Vietnam memorial background */
 #vietnamModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height:20vw;
-	background-color:#001c38;  /*Dark Blu*/
+	height: 20vw;
+	background-color: #001c38;  /* Dark Blue */
 	bottom: 70vw;
 	left: 67vw;
 }
 
-/*Dark Blue div containing the washington monument background*/
+/* Dark Blue div containing the Washington monument background */
 #washingtonModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height:20vw;
-	background-color:#001c38;  /*Dark Blu*/
+	height: 20vw;
+	background-color: #001c38;  /* Dark Blue */
 	bottom: 65vw;
 	left: 10vw;
 }
 
-/*Dark Blue div containing the white house background*/
+/* Dark Blue div containing the white house background */
 #whiteModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height:20vw;
-	background-color:#001c38;  /*Dark Blu*/
+	height: 20vw;
+	background-color: #001c38;  /* Dark Blue */
 	bottom: 85vw;
 	left: 38vw;
 }
 
-/*Dark Blue div containing the white house background*/
+/* Dark Blue div containing the white house background */
 #ww2ModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height:20vw;
-	background-color:#001c38;  /*Dark Blu*/
+	height: 20vw;
+	background-color: #001c38;  /* Dark Blue */
 	bottom: 105vw;
 	left: 67vw;
 }
@@ -675,7 +683,7 @@
 
 /* -------------------------------- Beginning of dining page CSS ---------------------------- */
 
-/* positionis the BPA logo image */
+/* positions the BPA logo image */
 .navsetup2
 {
 	position: absolute;
@@ -686,11 +694,12 @@
 /* Navigation links container */
 .nav
 {
-	margin: 0;
+	margin: 0vw;
 	padding: 0;
 	position: absolute;
 	left: 20vw;
 	top: 4vw;
+	width: 100%;
 }
 
 /* unvisited and visited nav link */
@@ -701,9 +710,7 @@
 	-webkit-text-stroke: .1vw #003263;
 }
 
-/*Styling and positioning for the each section of the footer*/
-
-/*Generic styling for all parts of the footer*/
+/* Generic styling for all parts of the footer */
 #footer3
 {
 	position: relative;
@@ -714,7 +721,6 @@
 	left: 1.5vw;
 	color:white;
 }
-
 
 /* Defines font to be utilized */
 @font-face
@@ -831,7 +837,7 @@ button:focus
 	left: 1.5vw;
 }
 
-/*Sub heading style*/
+/* Sub heading style */
 .subMeal
 {
 	font-family: ComScrpt;
@@ -930,7 +936,7 @@ button:focus
 	left: 1.5vw;	
 }
 
-/*Sub heading style*/
+/* Sub heading style */
 .subMeal
 {
 	font-family: ComScrpt;
@@ -1011,6 +1017,11 @@ button:focus
 	src: url('CopperplateGothicBold.ttf');
 }
 
+/* Prevents horizontal scroll for transit page */
+#bg_transit
+{
+	overflow-x: hidden;
+}
 
 /* Outline of BPA logo and rectangular borders */
 .navsetup3
@@ -1019,19 +1030,6 @@ button:focus
 	left: 0.5vw;
 	width: 97vw;
 	height: auto;
-}
-
-
-/* style for each navigation item on the bar */
-.navitems
-{
-	display: inline;
-	text-decoration: none;
-	padding: 1.2em;
-	font-size: 2.5vw;
-    font-weight: bold;
-	-webkit-text-stroke: 1vw #003263;
-
 }
 
 /* Removes text underline from nav items */
@@ -1255,7 +1253,7 @@ button:focus
 	
 }
 
-/* uber main content */
+/* Uber main content */
 .transInfo2
 {
 	position: absolute;
@@ -1266,7 +1264,7 @@ button:focus
 	width: 50vw;
 }
 
-/* lyft main content */
+/* Lyft main content */
 #transInfo2
 {
 	position: absolute;
@@ -1277,7 +1275,7 @@ button:focus
 	width: 50vw;
 }
 
-/* capital bikeshare content */
+/* capital bike-share content */
 .transInfo3
 {
 	position: absolute;
@@ -1329,7 +1327,7 @@ button:focus
 	font-size: 1.18vw;
 }
 
-/* uber tab link */
+/* Uber tab link */
 #uberLink
 {
 	color: #ffffff;
@@ -1339,7 +1337,7 @@ button:focus
 	font-size: 1.18vw;
 }
 
-/* lyft transport method link */
+/* Lyft transport method link */
 #lyftLink
 {
 	color: #ffffff;
@@ -1349,7 +1347,7 @@ button:focus
 	font-size: 1.18vw;
 }
 
-/* capital bikeshare link content */
+/* capital bike share link content */
 #capitalLink
 {
 	color: #ffffff;
@@ -1413,7 +1411,7 @@ button:focus
 	padding: 0;
 }
 
-/* capital bikeshare logo */
+/* capital bike share logo */
 #bikesharelogo
 {
     position: relative;	
