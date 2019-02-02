@@ -196,8 +196,9 @@
     }
     body
     {
-		background-size: cover; /* stretches to size of viewport */
-        background-position: center; /* center the bg image */
+		background-repeat: no-repeat; 
+        background-position: center;
+        background-size: cover;
     }
 	#dressCode_link
 	{
@@ -207,16 +208,19 @@
 
 
 /* Portrait and landscape on iphone 6/7/8 */
-@media all and (max-width: 499px) 
-{
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+	{
     .removed
     {
 		display: none;
     }
     body
     {
-		background-size: cover; /* stretches to size of viewport */
-        background-position: center; /* center the bg image */
+		background-repeat: no-repeat; 
+        background-position: center;
+        background-size: cover;
     }
 	#dressCode_link
 	{
@@ -226,16 +230,15 @@
     {    
 	    font-size: 1.3vw;
 	}
-}
-
-@media all and (max-width: 699px) 
-{
-	body
-	{
-		background-size: cover; /* stretches to size of viewport */
-        background-position: center; /* center the bg image */
 	}
-}	
+
+@media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 4)
+	{
+    
+	}		
 
 /* ----------------------------- End of home page media queries --------------------- */
 
