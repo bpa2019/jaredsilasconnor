@@ -187,8 +187,7 @@
 /* ----------------------------- Home page media queries --------------------- */
 
 /* Portrait and landscape for all ipads */
-@media only screen 
-    and (max-device-width : 1024px)
+@media only screen and (max-device-width : 1024px)
 {
     .removed
     {
@@ -213,8 +212,7 @@
 
 
 /* Portrait and landscape on iphone 6/7/8 */
-@media only screen 
-    and (max-device-width : 667px) 
+@media only screen and (max-device-width : 667px) 
 {
     .removed
     {
@@ -244,6 +242,38 @@
 	    margin-top: 4vw;
     }
 }		
+
+/* Portrait and landscape on most mobile devices */
+@media only screen and (max-device-width : 350px) 
+{
+    .removed
+    {
+		display: none;
+    }
+    #bg_home
+    {
+		background-repeat: no-repeat; 
+        background-position: center;
+        background-size: cover;
+		background-attachment: fixed;
+    }
+	.navsetup0
+	{
+	    margin-top: 2vw;
+	}
+	#dressCode_link
+	{
+		top: 6.7vw;
+	}
+	#mainOne
+    {    
+	    font-size: 1.3vw;
+	}
+	#navHome
+    {
+	    margin-top: 4vw;
+    }
+}
 
 /* ----------------------------- End of home page media queries --------------------- */
 
