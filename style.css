@@ -6,35 +6,45 @@
 	
     Date Created: 11/29/2018
 	
-    Last Modified: 2/1/2019
+    Last Modified: 1/28/2019
 	
-	Note: CSS Stylesheet for BPA site
+	Note: Stylesheet for BPA website
 
 */
 
 /* -------------------------------- Beginning of home page CSS ---------------------------- */
 
-
-/* position's the BPA logo image */
-.navsetup0
+/* positions all body content */
+#homeMain
 {
-	position: absolute;
-	left: .5vw;
-	width: 97vw;
-	margin-top: 4.25vw;
+	margin-top: 2vw;
 }
 
-/* Navigation links container */
-#navHome
+/* Styling for navigation bar div */
+#navigation
 {
-	margin: 0;
-	padding: 0;
 	position: absolute;
-	left: 20vw;
-	margin-top: 7.5vw;
+}
+
+/* Outline of BPA logo and rectangular borders */
+.navImg
+{
+	width: 93.5vw;
+	height: 9vw;
+	top: 4.5vw;
+	left: 1vw;
+	position: absolute;
+}
+
+/* Styling for the specific nav links */
+#navContainer
+{
+	position: absolute;
+	margin: 0;
+	padding-left: 18vw;
+	top: 7.75vw;
 	width: 100vw;
 	height: 10vw;
-	z-index: 1;
 }
 
 /* style for each navigation item on the bar */
@@ -42,8 +52,8 @@
 {
 	display: inline;
 	text-decoration: none;
-	padding: 3.5vw;
-	width: 100%;
+	padding: 1.5em;
+	width: 100vw;
 	font-size: 2.5vw;
     font-weight: bold;
 }
@@ -56,30 +66,47 @@
 	-webkit-text-stroke: .075vw #003263;
 }
 
-/* Styling for the footer */
-#footer1 
+/*Styling for the footer*/
+.footer1 
 {
    position: relative;
-   left: 1.5vw;
-   width: 95.5vw;
+   left: 2.45vw;
+   width: 92vw;
    height: 8vw;
-   top: 14.5vw;
+   top: 15vw;
    background-color: #003263;
    color: white;
+}
+
+/* Styles body, disables scroll for x */
+body
+{
+	padding-bottom: 1px;
+	max-width: 100%;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 100%;
+    width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
 }
 
 /* Styles the background image */
 #bg_home
 {
-	background: url("images/city2.jpg"); 
+	
+	/* The image used */
+	background-image: url("images/city2.jpg"); 
     background-repeat: no-repeat; 
     background-position: center;
     background-attachment: fixed;       
-    -webkit-background-size: cover;
+    webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	overflow-x: hidden;
+    height: 100%;
+    width: 100%;
 }
 
 /* Styles the opaque circular div */
@@ -135,11 +162,11 @@
 /* Styles and positions tan div container */
 #contentMiddle
 {
-	width: 95.5vw;
-	height: 35vw;
+	width: 92.1vw;
+	height: 39vw;
 	position: relative;
 	background-color: #e3c197;
-	left: 1.5vw;
+	left: 2.4vw;
 	top: 14vw;
 }
 
@@ -166,10 +193,10 @@
 #nlcImg
 {
 	position: absolute;
-	left: 45vw;
-	top: 5vw;
-	width: 60vw;
-	height: 26vw;
+	left: 47vw;
+	top: 7vw;
+	width: 55vw;
+	height: 23vw;
 }
 
 /* Style and limited positioning for dress code link */
@@ -186,93 +213,136 @@
 
 /* ----------------------------- Home page media queries --------------------- */
 
-/* Portrait and landscape for all ipads */
-@media only screen and (max-device-width : 1024px)
-{
-    .removed
-    {
-		display: none;
-    }
-    #bg_home
-    {
-		background-repeat: no-repeat; 
-        background-position: center;
-        background-size: cover;
-		background-attachment: fixed;
-    }
-	.navsetup0
-	{
-	    margin-top: 4vw;
-	}
+/* Landscape phones and down */
+@media (max-width: 480px) {
 	#dressCode_link
 	{
-		top: 6.75vw;
+		top: 7vw;
+	}
+	#navContainer
+	{
+		top: 6vw;
 	}
 }
 
-
-/* Portrait and landscape on iphone 6/7/8 */
-@media only screen and (max-device-width : 667px) 
-{
-    .removed
-    {
-		display: none;
-    }
-    #bg_home
-    {
-		background-repeat: no-repeat; 
-        background-position: center;
-        background-size: cover;
-		background-attachment: fixed;
-    }
-	.navsetup0
-	{
-	    margin-top: 2vw;
-	}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
 	#dressCode_link
 	{
-		top: 6.7vw;
+		top: 6vw;
 	}
-	#mainOne
-    {    
-	    font-size: 1.3vw;
-	}
-	#navHome
-    {
-	    margin-top: 4vw;
-    }
-}		
-
-/* Portrait and landscape on most mobile devices */
-@media only screen and (max-device-width : 350px) 
-{
-    .removed
-    {
-		display: none;
-    }
-    #bg_home
-    {
-		background-repeat: no-repeat; 
-        background-position: center;
-        background-size: cover;
-		background-attachment: fixed;
-    }
-	.navsetup0
+	#navContainer
 	{
-	    margin-top: 2vw;
+		top: 6vw;
 	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 736px) {
 	#dressCode_link
 	{
-		top: 6.7vw;
+		top: 6vw;
 	}
-	#mainOne
-    {    
-	    font-size: 1.3vw;
+	#navContainer
+	{
+		top: 6vw;
 	}
-	#navHome
-    {
-	    margin-top: 4vw;
-    }
+}
+
+/* Landscape tablet mode (ipad 2/3) */
+@media (max-width: 781px) {
+	#dressCode_link
+	{
+		top: 8vw;
+	}
+	#navContainer
+	{
+		top: 7.5vw;
+	}
+}
+
+/* iphone x in portrait mode */
+@media (max-width: 420px) {
+	#dressCode_link
+	{
+		top: 8vw;
+	}
+	#navContainer
+	{
+		top: 6.5vw;
+	}
+}
+
+/* Max width query at 286px */
+@media only screen and (max-width: 286px) 
+{
+  #navContainer 
+  {
+	  top: 4.5vw;
+  }
+  #dressCode_link
+  {
+	width: 35vw;
+  }
+}
+
+/* Max width query at 397px and minimum at 287px */
+@media only screen and (min-device-width : 287px) 
+and (max-device-width : 397px)
+{
+  #navContainer 
+  {
+	  top: 6vw;
+  }
+  .middleFooter 
+  {
+	  width: 5vw;
+  }
+  #dressCode_link
+  {
+	width: 50vw;
+  }
+}
+
+/* Max width query at 515px and minimum at 484px */
+@media only screen and (min-device-width : 484px) 
+and (max-device-width : 515px)
+{
+  #navContainer 
+  {
+	  top: 7vw;
+  }
+  .middleFooter 
+  {
+	  width: 5vw;
+  }
+  #dressCode_link
+  {
+	width: 50vw;
+  }
+}
+
+/* Max width query at 468px and minimum at 292px */
+@media only screen and (min-device-width : 292px) 
+and (max-device-width : 468px)
+{
+  #navContainer 
+  {
+	  top: 6.75vw;
+  }
+  .middleFooter 
+  {
+	  width: 5vw;
+  }
+}
+
+
+/* query for all devices max-width at 1020px */
+@media all and (max-width: 1020px) {
+  .removed
+  {
+    display: none;
+  }
 }
 
 /* ----------------------------- End of home page media queries --------------------- */
@@ -282,21 +352,37 @@
 
 /* ---------------------------- Beginning of attractions page CSS ---------------------------- */
 
-/* Prevents horizontal scroll for attractions page */
-#bg_attractions
-{
-	overflow-x: hidden;
-}
-
 /* position's the BPA logo image */
 .navsetup1
 {
 	position: absolute;
 	left: .5vw;
-	width: 97vw;
+	width: 98vw;
 	height: auto;
 }
 
+/* Navigation links container */
+.nav
+{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 20vw;
+	top: 4vw;
+	
+}
+
+/* styling for each navagation link */
+.navitems
+{
+	display: inline;
+	text-decoration: none;
+	padding: 1.2em;
+	font-size:2.5vw;
+    font-weight: bold;
+	-webkit-text-stroke: 1vw #003263;
+
+}
 
 /* unvisited and visited nav link */
 .site1:link, .site1:visited
@@ -306,39 +392,28 @@
 	-webkit-text-stroke: .1vw #003263;
 }
 
-/* Generic styling for all parts of the footer */
-#footer2
+/*Generic styling for all parts of the footer*/
+.footer2
 {
 	position: relative;
-	background-color: #003263;
-	width: 95.65vw;
-	height: 8.5vw;
+	background-color:#003263;
+	width: 96.5vw;
+	height:8.5vw;
 	top: 9vw;
-	left: 1.45vw;
-	color: white;
+	left: 1.5vw;
+	color:white;
 }
 
-/* Aligns the left side of the footer *Chapter, Members */
+/*Aligns the left side of the footer *Chapter, Members*/
 .leftFooter
 {
 	float: left;
-	margin-left: 5vw;
+	padding-left: 21vw;
 	font-size: 1vw;
 	padding-top: .5vw;
-	width: 100%;
 }
 
-/* Aligns the middle of the footer year */
-.middleFooter
-{
-	position: absolute;
-	top: 1.75vw;
-	left: 30vw;
-	color: white;
-	font-size: 1vw;
-}
-
-/* Aligns the right side of the footer School, Location */
+/*Aligns the right side of the footer *School, Location*/
 .rightFooter
 {
 	float: right;
@@ -347,88 +422,28 @@
 	padding-top: .5vw;
 }
 
-/* Social media div */
-.socialmedia
+/*Aligns the middle of the footer *Year*/
+.middleFooter
 {
 	position: absolute;
-	top: 2.3vw;
-	width: 1vw;
-	height: 1vw;
-	padding: 1vw;
-	background-color: #e3c197;
-	border-radius: 2vw;
-	border: .3vw solid #253d76;
+	top: 5vw;
+	left: 46vw;
+	color: white;
+	font-size: 1vw;
 }
 
-/* changes div color to inverse */
-.socialmedia:hover
-{
-	background-color: #203A65;
-}
-
-/* Used to fit facebook logo in div */
-#facebook
-{
-	height: 2vw;
-	width: 2vw;
-	position: absolute;
-	top: .5vw;
-	right: .5vw;
-}	
-
-/* Positioning the div with the facebook logo */
-#facebookPosition
-{
-	position: absolute;
-	right: 15vw;
-}
-
-/* styles twitter logo */
-#twitter
-{
-	height: 2vw;
-	width: 2vw;
-	position: absolute;
-	top: .5vw;
-	right: .5vw;
-}
-
-/* Positioning the div with the twitter logo */
-#twitterPosition
-{
-	position: absolute;
-	right: 10vw;
-}
-
-/* styles instagram logo */
-#instagram
-{
-	height: 2vw;
-	width: 2vw;
-	position: absolute;
-	top: .5vw;
-	right: .5vw;
-}
-
-/* Positioning the div with the instagram logo */
-#instagramPosition
-{
-	position: absolute;
-	right: 5vw;
-}
-
-/* Header image for the attractions page */
+/*Header image for the attractions page */
 .headerImage
 {
 	position: relative;
 	background-size: cover;
 	top: 10vw;
-	width: 95.5vw;
+	width: 97.6%;
 	height: 35vw;
-	left: 1.5vw;
+	left: 1.4vw;
 }
 
-/* Overlaying Header text for attractions  "Experience History" */
+/*Overtlaying Header text for attractions  "Experience History" */
 .headerText1
 {
 	position: absolute;
@@ -438,6 +453,7 @@
 	top: 20vw;
 	left: 27vw;
 	text-align: center;
+	
 }
 
 /* Defines font to be utilized */
@@ -447,25 +463,24 @@
 	src: url('CopperplateGothicBold.ttf');
 }
 
-/* The dark blue background the modal is contained in */
+/*The dark blue background the modal is contained in*/
 #modalBackground
 {
 	position: relative;
-	background-color: #003263; /*BPA Blue*/
+	background-color:#003263; /*BPA Blue*/
 	width: 97.6%;
-	height: 80vw;
-	top: 10.75vw;
+	height:80vw;
+	top:10vw;
 	left: 1.4vw;
 }
-
-/* The tan background above the footer */
+/*The tan background above the footer*/
 #tanBackground
 {
 	position: relative;
-	background-color: #f8d09c; /*Tan*/
+	background-color:#f8d09c; /*Tan*/
 	width: 97.6%;
-	height: 5vw;
-	top: 10vw;
+	height:5vw;
+	top:10vw;
 	left: 1.4vw;
 }
 
@@ -497,7 +512,7 @@
 
 /* Caption of Modal Image styling and positioning */
 #caption
-{
+ {
     margin: auto;
     display: block;
     width: 70vw;
@@ -508,12 +523,10 @@
     height: 10vw;
 	font-size: 1vw;
 }
-
 #modalCaption
 {
-	font-size: 2vw;
+	font-size:2vw;
 }
-
 /* Modal Animation name and timing */
 .modal-content, #caption 
 {    
@@ -523,14 +536,14 @@
     animation-duration: 0.6s;
 }
 
-/* Zoom effect when a modal opens */
+/*Zoom effect when a modal opens*/
 @-webkit-keyframes zoom 
 {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
 }
 
-/* Zoom effect when a modal opens */
+/*Zoom effect when a modal opens*/
 @keyframes zoom 
 {
     from {transform:scale(0)} 
@@ -558,140 +571,139 @@
     cursor: pointer;
 }
 
-/* White box and Location Icon styling and positioning */
+/*White box and Location Icon styling and positioning*/
 .locationIcon
 {
 	position: absolute;
 	width: 18vw;
-	height: 15vw;
+	height:15vw;
 	top: 1vw;
 	left: 1vw;
-	opacity: 0;
+	opacity:0;
 }
 
-/* displays white box and location icon on hover */
+/*displays white box and locaiton icon on hover*/
 .locationIcon:hover
 {
-	opacity: 1;
+	opacity:1;
 	cursor: pointer;
 }
 
-/* position of the image in the modal */
+/*position of the image in the modal*/
 .generalModal
 {
 	position: relative;
 	width: 18vw;
-	height: 15vw;
+	height:15vw;
 	top: 1vw;
 	left: 1vw;
 }
-
-/* position of the label under the modal image */
+/*position of the label under the modal image*/
 .modalText
 {
 	position: relative;
 	color: white;
 	font-family: Castellar;
-	font-size: 1vw;
+	font-size:1vw;
 	text-align: center;
 	margin-top: 1.8vw;
 }
 
-/* Dark Blue div containing the Arlington background */
+/*Dark Blue div containing the arlington background*/
 #arlingtonModalBg
 {
 	position: relative;
 	width: 20vw;
-	height: 20vw;
-	background-color: #001c38;  /* Dark Blue */
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
 	top: 5vw;
 	left: 10vw;
 }
 
-/* Dark Blue div containing the capitol building background */
+/*Dark Blue div containing the capitol building background*/
 #capitolModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height: 20vw;
-	background-color: #001c38;  /* Dark Blue */
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
 	bottom: 15vw;
 	left: 38vw;
 }
 
-/* Dark Blue div containing the Lincoln memorial background */
+/*Dark Blue div containing the lincoln memorial background*/
 #lincolnModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height: 20vw;
-	background-color: #001c38;  /* Dark Blue */
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
 	bottom: 35vw;
 	left: 67vw;
 }
 
-/* Dark Blue div containing the air and space museum background */
+/*Dark Blue div containing the air and space museum background*/
 #airModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height: 20vw;
-	background-color: #001c38;  /* Dark Blue */
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
 	bottom: 30vw;
 	left: 10vw;
 }
 
-/* Dark Blue div containing the Thomas Jefferson Memorial background */
+/*Dark Blue div containing the Thomas Jefferson Memorial background*/
 #thomasModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height: 20vw;
-	background-color: #001c38;  /* Dark Blue */
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
     bottom: 50vw;
 	left: 38vw;
 }
 
-/* Dark Blue div containing the Vietnam memorial background */
+/*Dark Blue div containing the vietnam memorial background*/
 #vietnamModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height: 20vw;
-	background-color: #001c38;  /* Dark Blue */
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
 	bottom: 70vw;
 	left: 67vw;
 }
 
-/* Dark Blue div containing the Washington monument background */
+/*Dark Blue div containing the washington monument background*/
 #washingtonModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height: 20vw;
-	background-color: #001c38;  /* Dark Blue */
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
 	bottom: 65vw;
 	left: 10vw;
 }
 
-/* Dark Blue div containing the white house background */
+/*Dark Blue div containing the white house background*/
 #whiteModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height: 20vw;
-	background-color: #001c38;  /* Dark Blue */
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
 	bottom: 85vw;
 	left: 38vw;
 }
 
-/* Dark Blue div containing the white house background */
+/*Dark Blue div containing the white house background*/
 #ww2ModalBg
 {	
 	position: relative;
 	width: 20vw;
-	height: 20vw;
-	background-color: #001c38;  /* Dark Blue */
+	height:20vw;
+	background-color:#001c38;  /*Dark Blu*/
 	bottom: 105vw;
 	left: 67vw;
 }
@@ -745,20 +757,6 @@
     }
 }
 
-/* query for all devices max-width at 1020px */
-@media all and (max-width: 1020px) 
-{
-    .footer2
-	{
-		width: 94vw;
-	}
-	.headerImage
-	{
-		width: 94vw;
-	}
-}
-
-
 /* ----------------------------- End of attractions page media queries --------------------- */
 
 /* -------------------------------- End of attractions page CSS ---------------------------- */
@@ -766,23 +764,40 @@
 
 /* -------------------------------- Beginning of dining page CSS ---------------------------- */
 
-/* positions the BPA logo image */
+/* disables vertical scroll */
+body
+{
+	overflow-x: hidden;
+}
+
+/* positionis the BPA logo image */
 .navsetup2
 {
 	position: absolute;
-	left: .5vw;
+	left: 1vw;
 	width: 97vw;
 }
 
 /* Navigation links container */
 .nav
 {
-	margin: 0vw;
+	margin: 0;
 	padding: 0;
 	position: absolute;
 	left: 20vw;
 	top: 4vw;
-	width: 100%;
+}
+
+/* styling for each navagation link */
+.navitems
+{
+	display: inline;
+	text-decoration: none;
+	padding: 1.2em;
+	font-size:2.5vw;
+    font-weight: bold;
+	-webkit-text-stroke: 1vw #003263;
+
 }
 
 /* unvisited and visited nav link */
@@ -793,16 +808,56 @@
 	-webkit-text-stroke: .1vw #003263;
 }
 
-/* Generic styling for all parts of the footer */
-#footer3
+/*Styling and positioning for the each section of the footer*/
+
+/*Generic styling for all parts of the footer*/
+.footer3
 {
 	position: relative;
 	background-color:#003263;
 	width: 95.5vw;
-	height: 8.5vw;
-	bottom: 3.25vw;
-	left: 1.5vw;
+	height:8.5vw;
+	bottom:3.5vw;
+	left: 2vw;
 	color:white;
+}
+
+/*Aligns the left side of the footer *Chapter, Members*/
+.leftFooter
+{
+	float: left;
+	padding-left: 20vw;
+	font-size: 1vw;
+}
+
+/*Aligns the right side of the footer *School, Location*/
+.rightFooter
+{
+	float: right;
+	padding-right: 20vw;
+	font-size: 1vw;
+}
+
+/*Aligns the middle of the footer *Year*/
+.middleFooter
+{
+	position:absolute;
+	top: 5vw;
+	left:45vw;
+	color:white;
+	font-size: 1vw;
+}
+
+/*Header image for the attractions page */
+.headerImage
+{
+	position: relative;
+	background-size: cover;
+	padding-left: ;
+	top: 10vw;
+	width: 97.6%;
+	height: 35vw;
+	left: 1.4vw;
 }
 
 /* Defines font to be utilized */
@@ -816,7 +871,7 @@
 @font-face
 {
 	font-family: Castelar;
-	src: url('CASTELAR.ttf');
+	src: url('Castelar.ttf');
 }
 
 /* Defines font to be utilized */
@@ -837,9 +892,9 @@
 /* Positions slideshow inner content */
 .slideshow
 {
-	width: 95.5vw;
+	max-width: 100%;
 	padding-top: 10vw;
-	padding-left: 1.5vw;
+	padding-left: 2vw;
 }
 
 /* Gives meal div blue color and position */
@@ -848,7 +903,7 @@
 	width: 95.5vw;
 	height: 5vw;
 	background-color: #003263;
-	left: 1.5vw;
+	left: 2vw;
 	position: relative;
 }
 
@@ -917,10 +972,10 @@ button:focus
 	position: relative;
 	bottom: 4vw;
 	width: 95.5vw; 
-	left: 1.5vw;
+	left: 2vw;
 }
 
-/* Sub heading style */
+/*Sub heading style*/
 .subMeal
 {
 	font-family: ComScrpt;
@@ -1016,10 +1071,10 @@ button:focus
 	position: relative;
 	bottom: 4vw;
 	width: 95.5vw; 
-	left: 1.5vw;	
+	left: 2vw;	
 }
 
-/* Sub heading style */
+/*Sub heading style*/
 .subMeal
 {
 	font-family: ComScrpt;
@@ -1057,7 +1112,7 @@ button:focus
 	position: relative;
 	bottom: 4vw;
 	width: 95.5vw; 
-	left: 1.5vw;	
+	left: 2vw;	
 }
 
 /* Image of hanks food styled and positioned */
@@ -1077,15 +1132,123 @@ button:focus
 	height: 25vw;
 }
 
-/* removes overflow from dining page */
-#diningBody
-{
-	overflow-x: hidden;
-}
-
 /* ----------------------------- Beginning of dining page media queries --------------------- */
 
+/* Landscape phones and down */
+@media (max-width: 480px) 
+{
+	.name1 
+    {
+		bottom: 19vw;
+    }
+    .num1 
+    {
+		bottom: 22.5vw;
+    }
+    .site1
+    {
+		bottom: 22.5vw;
+		left: 57vw;
+    }
+    .placeIcon1
+    {
+		position: relative;
+		left: 25vw;
+		bottom: 13.5vw;
+		width: 2vw;
+		height: 2vw;
+    }
+    .phoneIcon1
+    {
+		position: relative;
+		left: 56.25vw;
+		bottom: 17.25vw;
+		width: 2vw;
+		height: 2vw;
+	}
+	.siteIcon1
+	{
+		position: relative;
+		left: 56.25vw;
+		bottom: 22vw;
+		width: 2vw;
+		height: 2vw;
+	}
+	.navsetup
+	{
+		left: 2.5vw;
+	}
+}
 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) 
+{
+	.name1 
+    {
+		bottom: 19vw;
+    }
+    .num1 
+    {
+		bottom: 22.5vw;
+    }
+    .site1
+    {
+		bottom: 22.5vw;
+		left: 57vw;
+    }
+    .placeIcon1
+    {
+		position: relative;
+		left: 25vw;
+		bottom: 13.5vw;
+		width: 2vw;
+		height: 2vw;
+    }
+    .phoneIcon1
+    {
+		position: relative;
+		left: 56.25vw;
+		bottom: 17.25vw;
+		width: 2vw;
+		height: 2vw;
+	}
+	.siteIcon1
+	{
+		position: relative;
+		left: 56.25vw;
+		bottom: 22vw;
+		width: 2vw;
+		height: 2vw;
+	}
+	.navsetup
+	{
+		left: 2.5vw;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 736px) {
+	body
+	{
+		overflow-x: hidden;
+	}
+}
+
+/* Landscape tablet mode (ipad 2/3) */
+@media (max-width: 781px) {
+	body
+	{
+		overflow-x: hidden;
+	}
+}
+
+/* iphone x in portrait mode */
+@media (max-width: 420px) {
+	body
+	{
+		overflow-x: hidden;
+	}
+}
 
 /* ----------------------------- End of dining page media queries --------------------- */
 
@@ -1100,8 +1263,8 @@ button:focus
 	src: url('CopperplateGothicBold.ttf');
 }
 
-/* Prevents horizontal scroll for transit page */
-#bg_transit
+/* disables vertical scroll */
+body
 {
 	overflow-x: hidden;
 }
@@ -1110,9 +1273,31 @@ button:focus
 .navsetup3
 {
 	position: absolute;
-	left: 0.5vw;
-	width: 97vw;
+	left: 0.7vw;
+	width: 98vw;
 	height: auto;
+}
+
+/* Navigation items content container */
+.nav
+{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 20vw;
+	top: 4vw;
+}
+
+/* style for each navigation item on the bar */
+.navitems
+{
+	display: inline;
+	text-decoration: none;
+	padding: 1.2em;
+	font-size: 2.5vw;
+    font-weight: bold;
+	-webkit-text-stroke: 1vw #003263;
+
 }
 
 /* Removes text underline from nav items */
@@ -1130,29 +1315,66 @@ button:focus
 }
 
 /*--- Footer ---*/
-#footer4
+#footerTrans
 {
 	position: relative;
 	background-color: #003263;
-	width: 95.5vw;
+	width: 95vw;
 	height: 8.5vw;
-	top: 145vw;
-	left: 1.35vw;
+	top: 146vw;
+	left: 1.4vw;
 	color: white;
 }
 
+/*Aligns the left side of the footer*/
+.leftFooter
+{
+	float: left;
+	padding-left: 22vw;
+	font-size: 1vw;
+}
+
+/*Aligns the right side of the footer*/
+.rightFooter
+{
+	float: right;
+	padding-right: 22vw;
+	font-size: 1vw;
+	
+}
+.middleFooter
+{
+	position: absolute;
+	top: 5vw;
+	left:45vw;
+	color:white;
+	font-size: 1vw;
+}
 /*-----------------------------*/
 
+/*Attractions page*/
+.headerImage
+{
+	position: relative;
+	background-size: cover;
+	padding-left: ;
+	top: 10vw;
+	width: 97.6%;
+	height: 35vw;
+	left: 1.4vw;
+}
+
 /* plan transit text */
-#headerTran
+.headerText
 {
 	position: absolute;
 	font-size: 4.5vw;
-	color: #1a1a1a;
+	color: black;
 	text-decoration: underline;
-	top: 10vw;
+	top: 7vw;
 	left: 33vw;
 	text-align: center;
+	
 }
 
 /*------------------------------------------*/
@@ -1161,7 +1383,7 @@ button:focus
 #car
 {
 	position: absolute;
-	top: 22vw;
+	top: 20vw;
 	left: 15vw;	
 	transition: transform .2s; /* animation */
 	height: 15vw;
@@ -1178,7 +1400,7 @@ button:focus
 #bike
 {
 	position: absolute;
-	top: 22vw;
+	top: 20vw;
 	left: 42vw;	
 	transition: transform .2s; /* animation */
 	height: 15vw;
@@ -1195,7 +1417,7 @@ button:focus
 #train
 {
 	position: absolute;
-	top: 22vw;
+	top: 20vw;
 	left: 70vw;	
 	transition: transform .2s; /* animation */
 	height: 15vw;
@@ -1336,7 +1558,7 @@ button:focus
 	
 }
 
-/* Uber main content */
+/* uber main content */
 .transInfo2
 {
 	position: absolute;
@@ -1347,7 +1569,7 @@ button:focus
 	width: 50vw;
 }
 
-/* Lyft main content */
+/* lyft main content */
 #transInfo2
 {
 	position: absolute;
@@ -1358,7 +1580,7 @@ button:focus
 	width: 50vw;
 }
 
-/* capital bike-share content */
+/* capital bikeshare content */
 .transInfo3
 {
 	position: absolute;
@@ -1410,7 +1632,7 @@ button:focus
 	font-size: 1.18vw;
 }
 
-/* Uber tab link */
+/* uber tab link */
 #uberLink
 {
 	color: #ffffff;
@@ -1420,7 +1642,7 @@ button:focus
 	font-size: 1.18vw;
 }
 
-/* Lyft transport method link */
+/* lyft transport method link */
 #lyftLink
 {
 	color: #ffffff;
@@ -1430,7 +1652,7 @@ button:focus
 	font-size: 1.18vw;
 }
 
-/* capital bike share link content */
+/* capital bikeshare link content */
 #capitalLink
 {
 	color: #ffffff;
@@ -1494,7 +1716,7 @@ button:focus
 	padding: 0;
 }
 
-/* capital bike share logo */
+/* capital bikeshare logo */
 #bikesharelogo
 {
     position: relative;	
@@ -1572,7 +1794,95 @@ button:focus
 
 /* ----------------------------- Beginning of transit page media queries --------------------- */
 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#metroInfo2
+    {
+	top: 22vw;	
+    }
+	#trainLink
+    {
+	top: 33vw;
+	left: 35vw;
+    } 
+    #mapLink
+    {
+	top: 36vw;
+	left: 35vw;
+    }
+}
 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	#metroInfo2
+    {
+	top: 22vw;	
+    }
+	#trainLink
+    {
+	top: 33vw;
+	left: 35vw;
+    } 
+    #mapLink
+    {
+	top: 36vw;
+	left: 35vw;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 736px) {
+	#metroInfo2
+    {
+	top: 22vw;	
+    }
+	#trainLink
+    {
+	top: 33vw;
+	left: 35vw;
+    } 
+    #mapLink
+    {
+	top: 36vw;
+	left: 35vw;
+    }
+}
+
+/* Landscape tablet mode (ipad 2/3) */
+@media (max-width: 781px) {
+	#metroInfo2
+    {
+	top: 22vw;	
+    }
+	#trainLink
+    {
+	top: 33vw;
+	left: 35vw;
+    } 
+    #mapLink
+    {
+	top: 36vw;
+	left: 35vw;
+    }
+}
+
+/* iphone x in portrait mode */
+@media (max-width: 420px) {
+	#metroInfo2
+    {
+	top: 22vw;	
+    }
+    #trainLink
+    {
+	top: 33vw;
+	left: 35vw;
+    } 
+    #mapLink
+    {
+	top: 36vw;
+	left: 35vw;
+    }
+}
 
 /* ----------------------------- End of transit page media queries --------------------- */
 
