@@ -14,15 +14,6 @@
 
 /* -------------------------------- Beginning of home page CSS ---------------------------- */
 
-/* div for entire home nav */
-#topnav1
-{
-	position: relative;
-	left: -.5vw;
-	top: 11.5vw;
-	height: 10vw;
-	width: 100vw;
-}
 
 /* position's the BPA logo image */
 .navsetup0
@@ -40,7 +31,7 @@
 	padding: 0;
 	position: absolute;
 	left: 20vw;
-	top: 7.5vw;
+	margin-top: 7.5vw;
 	width: 100vw;
 	height: 10vw;
 }
