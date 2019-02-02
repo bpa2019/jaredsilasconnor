@@ -200,6 +200,10 @@
         background-position: center;
         background-size: cover;
     }
+	.navsetup0
+	{
+	    margin-top: 4vw;
+	}
 	#dressCode_link
 	{
 		top: 6.75vw;
@@ -222,6 +226,10 @@
         background-position: center;
         background-size: cover;
     }
+	.navsetup0
+	{
+	    margin-top: 2vw;
+	}
 	#dressCode_link
 	{
 		top: 6.7vw;
@@ -230,6 +238,10 @@
     {    
 	    font-size: 1.3vw;
 	}
+	#navHome
+    {
+	    margin-top: 4vw;
+    }
 	}
 
 @media screen 
