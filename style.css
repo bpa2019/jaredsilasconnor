@@ -302,6 +302,21 @@ and (max-device-width : 397px)
   {
 	width: 50vw;
   }
+  #bg_home
+  {
+	
+	/* The image used */
+	background-image: url("images/city2.jpg"); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 /* Max width query at 515px and minimum at 484px */
@@ -333,6 +348,22 @@ and (max-device-width : 468px)
   .middleFooter 
   {
 	  width: 5vw;
+  }
+  
+  #bg_home
+  {
+	
+	/* The image used */
+	background-image: url("images/city2.jpg"); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
   }
 }
 
