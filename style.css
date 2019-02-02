@@ -73,7 +73,8 @@
 {
 	background: url("images/city2.jpg"); 
     background-repeat: no-repeat; 
-    background-position: center;     
+    background-position: center;
+    background-attachment: fixed;       
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -184,7 +185,6 @@
 }
 
 /* ----------------------------- Home page media queries --------------------- */
-
 
 
 /* ----------------------------- End of home page media queries --------------------- */
