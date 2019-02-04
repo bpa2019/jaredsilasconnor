@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html>
+
+<html id="bg_transit">
 
     <head>
 
 	    <!-- 
 		
+		File name: transit.html
+		
 		Authors: Silas Dias, Connor Rodrigues, and Jared Brudner
+		
 		Date Created: 11/28/2018
-		Last Modified: 1/18/2019
+		
+		Last Modified: 1/31/2019
+		
+		Note: Transit page of BPA site
 		
 		-->
 	
 		<!-- Name of this page -->
         <title>Transit</title>
 		
-		<!-- Provision of meta data in this HTML document -->
+		<!-- Influences cross-browser responsiveness/scaling -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Helps web page scale well on safari (apple browser) -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
 		
 		<!-- Link to external CSS stylesheet -->
         <link rel="stylesheet" type="text/css" href="style.css" />
@@ -37,10 +47,10 @@
 	        <ul class="nav">
 				
 				<!-- Each individual navigation link -->
-		        <li class="navitems"><a href="index.html" class="navlinks">HOME</a></li>
-		        <li class="navitems"><a href="attractions.html" class="navlinks">ATTRACTIONS</a></li>
-		        <li class="navitems"><a href="dining.html" class="navlinks">DINING</a></li>
-		        <li class="navitems"><a href="transit.html" class="navlinks">TRANSIT</a></li>
+		        <li class="navItems"><a href="index.html" class="navlinks">HOME</a></li>
+		        <li class="navItems"><a href="attractions.html" class="navlinks">ATTRACTIONS</a></li>
+		        <li class="navItems"><a href="dining.html" class="navlinks">DINING</a></li>
+		        <li class="navItems"><a href="transit.html" class="navlinks">TRANSIT</a></li>
 
 		    </ul>
 		
@@ -49,7 +59,7 @@
 		
 		<img src="images/city5.jpg" class = "headerImage" draggable="false" />
 		
-		<p class="headerText">Plan Your Transit!</p>
+		<h1 id="headerTran">Plan Your Transit!</h1>
 		
 		<!-- In-page navigation (car, bike, train) -->
 		<img src="images/vroomvroom.png" alt="Automobiles" id="car" onclick="startScroll(0);"/>
@@ -111,11 +121,11 @@
 		
 		<div class="tanbox" id="tan2">
 		    
-			<img src="images/transportationLogos/bikesharelogo.png" alt="Bikeshare" id="bikesharelogo"/>
+			<img src="images/transportationLogos/bikesharelogo.png" alt="Bikeshare" id="bikesharelogo" />
 			
-			<img src="images/transportationLogos/pedicablogo.png" alt="Pedicab" id="pedicablogo"/>
+			<img src="images/transportationLogos/pedicablogo.PNG" alt="Pedicab" id="pedicablogo" />
 			
-			<img src="images/transportationLogos/capitalsegwaylogo.png" alt="Segway" id="segwaylogo"/>
+			<img src="images/transportationLogos/capitalsegwaylogo.png" alt="Segway" id="segwaylogo" />
 			
 		</div>
 		
@@ -156,7 +166,7 @@
 		
 		<div class="tanbox" id="tan3">
 		
-		    <img src="images/transportationLogos/METROlogo.png" alt="Train" id="metrologo"/>
+		    <img src="images/transportationLogos/metrologo.png" alt="Train" id="metrologo"/>
 		
 		</div>
 		
@@ -174,29 +184,52 @@
 			
 			<a href="https://www.wmata.com/schedules/maps/" target="_blank" id="mapLink">Click here for maps of the bus and train lines</a>
 			
-			<img src="images/transportationLogos/TrainMap.png" alt="map" id="trainmap"/>
+			<img src="images/transportationLogos/train_map.PNG" alt="map" id="trainmap" />
 			
 		</div>
 		
-		
 	    <!-- Bottom of page footer container -->
-	    <div id="footerTrans">
+	    <div id="footer4">
 		
-		    <!-- Bottom left side footer content -->
-		    <div class="leftFooter">
-                <p>Chapter: BPA(435) Website Design Team</p>
-                <p>Members: Connor Rodrigues, Jared Brudner, Silas Dias</p>
+            <!-- Bottom left side footer content --> 
+			<div class="leftFooter">
+				<p>Chapter: BPA(435) Website Design Team</p>
+				<p>Members: Connor Rodrigues, Jared Brudner, Silas Dias</p>
+				<p>Year: 2019</p>
 			</div>
-			
+				
+			<!-- Centered year on footer -->
+			<div class="middleFooter">
+				<p>School: Assabet Valley Regional Technical High School</p>
+				<p>Location: Marlborough, Massachusetts</p>
+			</div>
+				
 			<!-- Bottom right side footer content -->
 			<div class="rightFooter">
-                <p>School: Assabet Valley Regional Technical High School</p>
-			    <p>Location: Marlborough, Massachusetts</p>
-			</div>
-			
-			<div class="middleFooter">
-			    <p>Year: 2019</p>
-	        </div>
+					
+			    <!-- facebook logo div -->
+			    <div class="socialmedia" id="facebookPosition">
+					
+				    <a href="https://www.facebook.com/businessprofessionalsofamerica"target="_blank"><img src="images/facebookF.png" id="facebook" draggable="false"/></a>
+					
+				</div>
+					
+				<!-- twitter logo div -->
+				<div class="socialmedia" id="twitterPosition">
+					
+					<a href="https://twitter.com/National_BPA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/twitterLogo.png" id="twitter" draggable="false"/></a>
+					
+				</div>
+					
+				<!-- instagram logo div -->
+				<div class="socialmedia" id="instagramPosition">
+					
+					<a href="https://www.instagram.com/bpanational/?hl=en" target="_blank"><img src="images/instagramLogo.png" id="instagram" draggable="false"/>
+					
+				</div>
+					
+			</div>		
+		
         </div>
 		
 		

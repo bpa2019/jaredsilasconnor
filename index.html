@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html>
+
+<html id="bg_home">
 
     <head>
 
 	    <!-- 
 		
 		File Name: index.html
+		
 		Authors: Silas Dias, Connor Rodrigues, Jared Brudner
+		
 		Date Created: 11/29/2018
-		Last Modified: 12/13/2018
+		
+		Last Modified: 2/1/2019
+		
+		Note: Home page of BPA website
 		
 		-->
 	
 		<!-- Name of this page -->
         <title>Home</title>
 		
-		<!-- Provision of meta data in this HTML document -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		
 		<!-- Link to external CSS stylesheet -->
         <link rel="stylesheet" type="text/css" href="style.css" />
 		
-		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+		<!-- Influences cross-browser responsiveness/scaling -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 		
+		<!-- Helps webpage scale well on safari (apple browser) -->
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 		
 		<!-- Displays a BPA image for favicon -->
 		<link rel="icon" href="images/favicon.jpg" type="image/jpg" sizes="16x16">
@@ -33,7 +36,7 @@
 	</head>
 
 	
-	<body id="bg_home" onload="setup();">
+	<body onload="setup();">
 	
 		<div class="removed">
 	
@@ -62,13 +65,13 @@
 		<div id="homeMain">
 		
 			<!-- Div container for navigation menu -->
-			<div id="navigation">
+			<div id="topnav1">
 		
 				<!-- BPA logo and borders in an image -->
-				<img src="images/navigation.png" class="navImg" />
+				<img src="images/navigation.png" class="navsetup0" />
 
 				<!-- Container of nav links -->
-				<ul id="navContainer">
+				<ul id="navHome">
 					
 					<!-- Each individual navigation link -->
 					<li class="navItems"><a href="index.html" class="navlinks">HOME</a></li>
@@ -98,8 +101,7 @@
 				one of the best times to visit the area is in the Spring, a fantastic time to catch a glimpse of the cherry blossoms. The national buildings, monuments and structures are
 				sprinkled throughout the city, and they all tell the great story of our country's history. 
 				You'll need a fully charged phone or camera, as there will be many memories to capture and 
-				sights you will want to remember. 
-	</p>
+				sights you will want to remember. </p>
 			
 				<!-- NLC image displayed -->
 				<img src="images/nlcLogo.png" id="nlcImg"/>
@@ -113,24 +115,48 @@
 
 			
 			<!-- Bottom of page footer container --> 
-			<div class="footer1" style="width: 92.1vw; left: 2.45vw;">
+			<div id="footer1">
 			
 				<!-- Bottom left side footer content --> 
 				<div class="leftFooter">
 					<p>Chapter: BPA(435) Website Design Team</p>
 					<p>Members: Connor Rodrigues, Jared Brudner, Silas Dias</p>
-				</div>
-				
-				<!-- Bottom right side footer content -->
-				<div class="rightFooter">
-					<p>School: Assabet Valley Regional Technical High School</p>
-					<p>Location: Marlborough, Massachusetts</p>
+					<p>Year: 2019</p>
 				</div>
 				
 			    <!-- Centered year on footer -->
 			    <div class="middleFooter">
-				    <p>Year: 2019</p>
+				    <p>School: Assabet Valley Regional Technical High School</p>
+					<p>Location: Marlborough, Massachusetts</p>
 			    </div>
+				
+				<!-- Bottom right side footer content -->
+				<div class="rightFooter">
+					
+					<!-- facebook logo div -->
+					<div class="socialmedia" id="facebookPosition">
+					
+						<a href="https://www.facebook.com/businessprofessionalsofamerica"target="_blank"><img src="images/facebookF.png" id="facebook" draggable="false"/></a>
+					
+					</div>
+					
+					<!-- twitter logo div -->
+					<div class="socialmedia" id="twitterPosition">
+					
+						<a href="https://twitter.com/National_BPA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/twitterLogo.png" id="twitter" draggable="false"/></a>
+					
+					</div>
+					
+					<!-- instagram logo div -->
+					<div class="socialmedia" id="instagramPosition">
+					
+						<a href="https://www.instagram.com/bpanational/?hl=en" target="_blank"><img src="images/instagramLogo.png" id="instagram" draggable="false"/>
+					
+					</div>
+					
+					
+					
+				</div>
 			
 			</div>
 		
