@@ -186,7 +186,24 @@
 
 /* ----------------------------- Home page media queries --------------------- */
 
-/* Ipad/Tablet query */
+/* Portrait and landscape for all ipads */
+@media only screen and (max-width: 1024px)
+{
+    .removed
+    {
+		display: none;
+    }
+	.navsetup0
+	{
+	    margin-top: 4vw;
+	}
+	#dressCode_link
+	{
+		top: 6.75vw;
+	}
+}
+
+/* ipad/tablet media query */
 @media screen and (max-width: 800px) 
 {
     .removed
@@ -207,7 +224,7 @@
 	}
 	#navHome
     {
-	    margin-top: 3.5vw;
+	    margin-top: 4vw;
     }
 	body, html
 	{
@@ -216,7 +233,7 @@
 	}
 }
 
-/* Mobile phone query */
+/* mobile phone media query */
 @media screen and (max-width: 400px) 
 {
     .removed
