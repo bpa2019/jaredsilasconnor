@@ -248,8 +248,13 @@
 	}
 	#navHome
     {
-	    margin-top: 4vw;
+	    margin-top: 3vw;
     }
+	body, html
+	{
+		height: 100%;
+		margin: 0vw;
+	}
 }
 
 /* ----------------------------- End of home page media queries --------------------- */
