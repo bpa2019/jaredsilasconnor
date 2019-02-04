@@ -1378,10 +1378,10 @@ button:focus
 #metroInfo1
 {
     position: absolute;
-	top: 3.5vw;
+	top: 4.5vw;
 	left: 6vw;
 	color: #ffffff;
-	font-size: 1.3vw;
+	font-size: 1.25vw;
 	width: 25vw;	
 }
 
@@ -1389,10 +1389,10 @@ button:focus
 #metroInfo2
 {
     position: absolute;
-	top: 17vw;
+	top: 18vw;
 	left: 6vw;
 	color: #ffffff;
-	font-size: 1.3vw;
+	font-size: 1.25vw;
 	width: 25vw;	
 }
 
@@ -1461,7 +1461,7 @@ button:focus
 {
     font-size: 1.25vw;	
 	position: absolute;
-	top: 28.5vw;
+	top: 30vw;
 	left: 6vw;
 	color: #ffffff;
 } 
@@ -1471,7 +1471,7 @@ button:focus
 {
     font-size: 1.25vw;	
 	position: absolute;
-	top: 32vw;
+	top: 33.5vw;
 	left: 6vw;
 	color: #ffffff;
 } 
