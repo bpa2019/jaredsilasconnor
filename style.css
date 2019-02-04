@@ -229,11 +229,11 @@
 	body, html
 	{
 		height: 100%;
-		margin: 0vw;
+		overflow-x: hidden;
 	}
-	.navItems
+	.nav
 	{
-		margin-top: 2vw;
+		top: 2vw;
 	}
 }
 
@@ -263,10 +263,11 @@
 	body, html
 	{
 		height: 100%;
+		overflow-x: hidden;
 	}
-	.navItems
+	.nav
 	{
-		margin-top: 2vw;
+		top: 2vw;
 	}
 }
 
@@ -327,8 +328,8 @@
 .middleFooter
 {
 	position: absolute;
-	top: 1.75vw;
-	left: 30vw;
+	padding-top: 1.5vw;
+	padding-left: 30vw;
 	color: white;
 	font-size: 1vw;
 }
