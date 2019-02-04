@@ -224,7 +224,7 @@
 	}
 	#navHome
     {
-	    margin-top: 4vw;
+	    margin-top: 4.75vw;
     }
 	body, html
 	{
@@ -259,7 +259,6 @@
 	body, html
 	{
 		height: 100%;
-		margin: 0vw;
 	}
 }
 
