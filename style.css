@@ -231,9 +231,9 @@
 		height: 100%;
 		margin: 0vw;
 	}
-	.nav
+	.navItems
 	{
-		top: 2vw;
+		margin-top: 2vw;
 	}
 }
 
@@ -264,9 +264,9 @@
 	{
 		height: 100%;
 	}
-	.nav
+	.navItems
 	{
-		top: 2vw;
+		margin-top: 2vw;
 	}
 }
 
