@@ -231,6 +231,10 @@
 		height: 100%;
 		margin: 0vw;
 	}
+	.nav
+	{
+		top: 2vw;
+	}
 }
 
 /* mobile phone media query */
@@ -259,6 +263,10 @@
 	body, html
 	{
 		height: 100%;
+	}
+	.nav
+	{
+		top: 2vw;
 	}
 }
 
