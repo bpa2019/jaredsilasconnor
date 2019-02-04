@@ -34,7 +34,6 @@
 	margin-top: 7.5vw;
 	width: 100vw;
 	height: 10vw;
-	z-index: 1;
 }
 
 /* style for each navigation item on the bar */
@@ -229,7 +228,6 @@
 	body, html
 	{
 		height: 100%;
-		overflow-x: hidden;
 	}
 	.nav
 	{
@@ -267,7 +265,6 @@
 	body, html
 	{
 		height: 100%;
-		overflow-x: hidden;
 	}
 	.nav
 	{
@@ -276,6 +273,10 @@
 	#footer2
 	{
 		width: 96vw;
+	}
+	#bg_home
+	{
+		overflow-x: hidden;
 	}
 }
 
