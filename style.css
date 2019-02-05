@@ -468,10 +468,10 @@
 {
 	position: relative;
 	background-color: #003263; /*BPA Blue*/
-	width: 97.6%;
+	width: 95.5vw;
 	height: 80vw;
 	top: 10.75vw;
-	left: 1.4vw;
+	left: 1.5vw;
 }
 
 /* The tan background above the footer */
@@ -479,10 +479,10 @@
 {
 	position: relative;
 	background-color: #f8d09c; /*Tan*/
-	width: 97.6%;
+	width: 95.5vw;
 	height: 5vw;
 	top: 10vw;
-	left: 1.4vw;
+	left: 1.5vw;
 }
 
 /* The Modal (background) */
@@ -772,6 +772,14 @@
     {
 	    left: 2vw;
 		width: 96vw;
+    }
+    #modalBackground
+    {
+	position: relative;
+	background-color: #003263; /* BPA Blue */
+	height: 80vw;
+	top: 10.75vw;
+	left: 1.4vw;
     }
 }
 
