@@ -794,6 +794,7 @@
 	#footer2
 	{
 		width: 95.5vw;
+		left: .85vw;
 	}
 	#headerImage
     {
@@ -807,6 +808,7 @@
 	#tanBackground
 	{
 		left: .85vw;
+		width: 95.5vw;
 	}
 }
 
@@ -815,7 +817,7 @@
 {
 	#footer2
 	{
-		width: 94vw;
+		width: 95.5vw;
 		left: 0vw;
 	}
 	#headerImage
@@ -828,7 +830,8 @@
     }
 	#tanBackground
 	{
-		left: .85vw;
+		left: 0vw;
+		width: 95.5vw;
 	}
 }
 
