@@ -764,7 +764,7 @@
 /* query for all devices max-width at 1020px */
 @media all and (max-width: 1020px) 
 {
-    .footer2
+    #footer2
 	{
 		width: 94vw;
 	}
@@ -779,7 +779,7 @@
 {
 	#footer2
 	{
-		width: 96vw;
+		width: 96.5vw;
 	}
 }
 
@@ -788,7 +788,7 @@
 {
 	#footer2
 	{
-		width: 90vw;
+		width: 93vw;
 	}
 }
 
