@@ -1536,11 +1536,11 @@ button:focus
 #metroInfo1
 {
     position: absolute;
-	top: 7vw;
-	left: 6vw;
+	top: 9vw;
+	left: 3vw;
 	color: #ffffff;
-	font-size: 1.25vw;
-	width: 25vw;	
+	font-size: 1.1vw;
+	width: 30vw;	
 }
 
 /* metro data content second section */
@@ -1548,10 +1548,10 @@ button:focus
 {
     position: absolute;
 	top: 20vw;
-	left: 6vw;
+	left: 3vw;
 	color: #ffffff;
-	font-size: 1.25vw;
-	width: 25vw;	
+	font-size: 1.1vw;
+	width: 30vw;	
 }
 
 /* yellow cab second link */
