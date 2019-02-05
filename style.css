@@ -289,6 +289,10 @@
 		left: 0vw;
 		top: 14vw;
 	}
+	.leftFooter
+    {
+	    padding-top: .25vw;
+    }
 }
 
 /* ----------------------------- End of home page media queries --------------------- */
