@@ -433,8 +433,15 @@
 	right: 5vw;
 }
 
+/* Styles div for header image and text */
+#attr_Experience
+{
+	position: relative;
+	left: 0vw;
+}
+
 /* Header image for the attractions page */
-.headerImage
+#headerImage
 {
 	position: relative;
 	background-size: cover;
@@ -761,25 +768,12 @@
     }
 }
 
-/* query for all devices max-width at 1020px */
-@media all and (max-width: 1020px) 
-{
-    #footer2
-	{
-		width: 94vw;
-	}
-	.headerImage
-	{
-		width: 94vw;
-	}
-}
-
 /* ipad/tablet media query */
 @media screen and (max-width: 800px) 
 {
 	#footer2
 	{
-		width: 96.5vw;
+		width: 97vw;
 	}
 }
 
@@ -788,8 +782,12 @@
 {
 	#footer2
 	{
-		width: 93vw;
+		width: 94vw;
 	}
+	#attr_Experience
+    {
+	    left: -1vw;
+    }
 }
 
 
