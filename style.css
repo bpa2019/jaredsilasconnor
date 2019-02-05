@@ -1527,15 +1527,16 @@ button:focus
 {
     margin-top: 2vw;	
 	color: #ffffff;
-	text-align: center;
+	position: absolute;
 	font-size: 1.5vw;
+	left: 15vw;
 }
 
 /* metro data content */
 #metroInfo1
 {
     position: absolute;
-	top: 4.5vw;
+	top: 7vw;
 	left: 6vw;
 	color: #ffffff;
 	font-size: 1.25vw;
@@ -1546,7 +1547,7 @@ button:focus
 #metroInfo2
 {
     position: absolute;
-	top: 18vw;
+	top: 20vw;
 	left: 6vw;
 	color: #ffffff;
 	font-size: 1.25vw;
@@ -1598,7 +1599,7 @@ button:focus
 {
 	color: #ffffff;
 	position: absolute;
-	top: 23vw;
+	top: 24vw;
 	left: 6vw;
 	font-size: 1.18vw;
 }
@@ -1608,7 +1609,7 @@ button:focus
 {
 	color: #ffffff;
 	position: absolute;
-	top: 36vw;
+	top: 37vw;
 	left: 6vw;
 	font-size: 1.18vw;
 }
@@ -1618,7 +1619,7 @@ button:focus
 {
     font-size: 1.25vw;	
 	position: absolute;
-	top: 30vw;
+	top: 32vw;
 	left: 6vw;
 	color: #ffffff;
 } 
@@ -1628,7 +1629,7 @@ button:focus
 {
     font-size: 1.25vw;	
 	position: absolute;
-	top: 33.5vw;
+	top: 36.5vw;
 	left: 6vw;
 	color: #ffffff;
 } 
