@@ -793,7 +793,7 @@
 {
 	#footer2
 	{
-		width: 97vw;
+		width: 95.5vw;
 	}
 	#headerImage
     {
@@ -804,6 +804,10 @@
     {
 	    left: .85vw;
     }
+	#tanBackground
+	{
+		left: .85vw;
+	}
 }
 
 /* mobile phone media query */
@@ -812,6 +816,7 @@
 	#footer2
 	{
 		width: 94vw;
+		left: 0vw;
 	}
 	#headerImage
     {
@@ -821,6 +826,10 @@
     {
 	    left: 0vw;
     }
+	#tanBackground
+	{
+		left: .85vw;
+	}
 }
 
 
