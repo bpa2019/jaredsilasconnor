@@ -451,7 +451,7 @@
 	font-family: CopperplateGothicBold;
 	font-size: 4.5vw;
 	color: white;
-	top: 20vw;
+	top: 22vw;
 	left: 27vw;
 	text-align: center;
 }
@@ -768,10 +768,11 @@
 	{
 		width: 94vw;
 	}
-	#headerImage
-	{
-		width: 94vw;
-	}
+    #headerImage
+    {
+	    left: 1vw;
+		width: 95.5vw;
+    }
 }
 
 /* ipad/tablet media query */
@@ -781,6 +782,10 @@
 	{
 		width: 97vw;
 	}
+	#headerImage
+    {
+	    left: 0vw;
+    }
 }
 
 /* mobile phone media query */
@@ -790,6 +795,10 @@
 	{
 		width: 94vw;
 	}
+	#headerImage
+    {
+	    left: -.5vw;
+    }
 }
 
 
