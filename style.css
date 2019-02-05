@@ -291,11 +291,11 @@
 	}
 	.leftFooter
     {
-	    padding-top: 0vw;
+	    margin-top: 0vw;
     }
 	.middleFooter
     {
-	    padding-left: 35vw;
+	    margin-left: 8vw;
     }
 }
 
