@@ -1229,6 +1229,49 @@ button:focus
 	{
 		left: 0vw;
 	}
+	#Breakfast
+	{
+		left: 0vw;
+	}
+	#Lunch
+	{
+		left: 0vw;
+	}
+	#Dinner
+	{
+		left: 0vw;
+	}
+	.placeIcon1
+	{
+		bottom: 14vw;
+		left: 24vw;
+	}
+	.phoneIcon1
+	{
+		bottom: 17.5vw;
+	}
+	.siteIcon1
+	{
+		bottom: 21.5vw;
+	}
+	.name1
+	{
+		bottom: 19vw;
+	}
+	.num1
+	{
+		bottom: 23vw;
+	}
+	.site1
+	{
+		bottom: 22vw;
+		left: 57vw;
+	}
+	#footer3
+	{
+		left: 0vw;
+	}
+	
 }
 
 
