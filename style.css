@@ -770,7 +770,7 @@
 	}
     #headerImage
     {
-	    left: .25vw;
+	    left: 2vw;
 		width: 96vw;
     }
 }
@@ -784,7 +784,8 @@
 	}
 	#headerImage
     {
-	    left: 0vw;
+	    left: .85vw;
+		width: 95.5vw;
     }
 }
 
