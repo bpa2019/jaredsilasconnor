@@ -1092,6 +1092,16 @@ button:focus
 
 
 
+/* mobile phone media query */
+@media screen and (max-width: 400px) 
+{
+    /* website icon styled and positioned */
+    .siteIcon1
+    {
+	    bottom: 28vw;
+    }
+}
+
 /* ----------------------------- End of dining page media queries --------------------- */
 
 /* -------------------------------- End of dining page CSS ---------------------------- */
