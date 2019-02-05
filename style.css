@@ -293,6 +293,10 @@
     {
 	    padding-top: .25vw;
     }
+	.middleFooter
+    {
+	    padding-left: 35vw;
+    }
 }
 
 /* ----------------------------- End of home page media queries --------------------- */
