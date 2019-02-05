@@ -1424,6 +1424,16 @@ button:focus
 	font-size: 1.5vw;
 	position: absolute;
 	top: .5vw;
+	left: 20vw;
+}
+
+/* capital bikeshare header */
+.transHead5
+{
+	color: #ffffff;
+	font-size: 1.5vw;
+	position: absolute;
+	top: .5vw;
 	left: 25vw;
 }
 
