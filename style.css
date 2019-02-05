@@ -770,16 +770,13 @@
 	}
     #headerImage
     {
-	    left: 2vw;
+	    left: 1.1vw;
 		width: 96vw;
     }
+	/* The dark blue background the modal is contained in */
     #modalBackground
     {
-	position: relative;
-	background-color: #003263; /* BPA Blue */
-	height: 80vw;
-	top: 10.75vw;
-	left: 1.4vw;
+	    left: .5vw;
     }
 }
 
@@ -795,6 +792,10 @@
 	    left: .85vw;
 		width: 95.5vw;
     }
+	#modalBackground
+    {
+	    left: .85vw;
+    }
 }
 
 /* mobile phone media query */
@@ -805,6 +806,10 @@
 		width: 94vw;
 	}
 	#headerImage
+    {
+	    left: 0vw;
+    }
+	#modalBackground
     {
 	    left: 0vw;
     }
