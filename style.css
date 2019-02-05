@@ -1093,7 +1093,7 @@ button:focus
 
 
 /* mobile phone media query */
-@media screen and (max-width: 400px) 
+@media screen and (max-width: 375px) 
 {
     /* website icon styled and positioned */
     .siteIcon1
