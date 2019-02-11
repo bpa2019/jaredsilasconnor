@@ -831,7 +831,16 @@
 	}
 	.modal-content 
 	{
-        width: 50vw;
+        width: 65vw;
+    }
+}
+
+/* tablet media query */
+@media screen and (max-width: 595px) 
+{
+	.modal-content 
+	{
+        width: 65vw;
     }
 }
 
